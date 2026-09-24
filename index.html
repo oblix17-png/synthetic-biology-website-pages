@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#dcecf8" />
     <title>被写下的指令</title>
-    <script type="module" crossorigin src="./assets/index-Fp329gii.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-EfevHLD5.css">
+    <script type="module" crossorigin src="./assets/index-N2u2Ad0-.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-_5rAIwju.css">
   </head>
   <body>
+    <nav class="site-nav" aria-label="页面章节导航">
+      <div class="site-nav__brand">借生造物</div>
+      <div class="site-nav__sections">
+        <button class="is-active" type="button" data-nav-target="intro-start">进入页</button>
+        <button type="button" data-nav-target="preface-start">前言</button>
+        <button type="button" data-nav-target="introduction-start">介绍</button>
+        <button type="button" data-nav-target="science-start">趣味科普</button>
+      </div>
+      <div class="site-nav__actions" aria-hidden="true"></div>
+    </nav>
     <main>
-      <section class="intro-panel" aria-labelledby="intro-title">
+      <section id="intro-start" class="intro-panel" aria-labelledby="intro-title" data-nav-section="intro-start">
         <video class="intro-panel__video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
           <source src="./assets/biology-intro.mp4" type="video/mp4" />
         </video>
@@ -33,7 +43,7 @@
         </div>
         <span class="intro-panel__scroll" aria-hidden="true">向下探索</span>
       </section>
-      <section class="story-panel" aria-labelledby="story-title" data-reveal-panel>
+      <section id="preface-start" class="story-panel" aria-labelledby="story-title" data-reveal-panel data-nav-section="preface-start">
         <div class="ambient-image" aria-hidden="true"></div>
         <div class="image-field" aria-hidden="true">
           <video class="story-video" autoplay muted loop playsinline preload="auto">
@@ -60,7 +70,7 @@
           </div>
         </div>
       </section>
-      <section class="story-panel story-panel--third" aria-labelledby="third-title" data-reveal-panel>
+      <section class="story-panel story-panel--third" aria-labelledby="third-title" data-reveal-panel data-nav-section="preface-start">
         <div class="image-field" aria-hidden="true">
           <video class="story-video" autoplay muted loop playsinline preload="auto">
             <source src="./assets/third-story.mp4" type="video/mp4" />
@@ -89,7 +99,7 @@
           </div>
         </div>
       </section>
-      <div class="pillar-carousel" aria-label="四个生物制造板块">
+      <div id="introduction-start" class="pillar-carousel" aria-label="四个生物制造板块" data-nav-section="introduction-start">
         <button class="pillar-arrow pillar-arrow--prev" type="button" aria-label="上一个板块">‹</button>
         <div class="pillar-track">
         <section class="pillar-panel" aria-labelledby="medicine-title">
@@ -107,7 +117,7 @@
         </div>
         <button class="pillar-arrow pillar-arrow--next" type="button" aria-label="下一个板块">›</button>
       </div>
-      <section class="gene-panel" aria-labelledby="gene-title" data-reveal-panel>
+      <section class="gene-panel" aria-labelledby="gene-title" data-reveal-panel data-nav-section="introduction-start">
         <video class="gene-panel__video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
           <source src="./assets/gene-timeline.mp4" type="video/mp4" />
         </video>
@@ -126,7 +136,115 @@
         </div>
         <div class="gene-panel__data">麦肯锡预测，合成生物学未来一二十年内每年可带来至少 <strong>2 万亿美元</strong>直接经济效益。</div>
       </section>
-      <section class="cell-factory" aria-labelledby="cell-factory-title">
+      <section id="data-gallery" class="data-gallery" aria-labelledby="data-gallery-title" data-data-gallery data-reveal-panel data-nav-section="introduction-start">
+        <header class="data-gallery__header">
+          <div>
+            <p>DATA / EVIDENCE / SCALE</p>
+            <h2 id="data-gallery-title">数字如何证明变化</h2>
+          </div>
+          <div class="data-gallery__legend" aria-label="数据来源等级">
+            <span><i class="source-dot source-dot--primary"></i>一级 · 官方</span>
+            <span><i class="source-dot source-dot--secondary"></i>二级 · 机构</span>
+            <span><i class="source-dot source-dot--paper"></i>三级 · 论文</span>
+          </div>
+        </header>
+
+        <div class="data-gallery__viewport">
+          <div class="data-gallery__track">
+            <article class="data-slide data-slide--cost is-active" data-data-slide="0" aria-label="图一：成本下降曲线">
+              <div class="data-slide__intro">
+                <span class="data-slide__index">01 / WHY NOW</span>
+                <h3>读取与书写生命，<br />正在变得足够便宜</h3>
+                <p>两条曲线跨越多个数量级，因此纵轴采用对数刻度。数值轴从高到低展示成本下降，不用线性高度制造夸张落差。</p>
+                <div class="data-source data-source--pending"><strong>待核验后发布</strong><span>测序：NHGRI 官方成本曲线<br />DNA 合成：需回查学术综述原始数据</span></div>
+              </div>
+              <div class="glass-chart cost-chart" role="img" aria-label="2000年至2025年DNA合成成本与人类基因组测序成本呈数量级下降">
+                <div class="chart-title"><span>成本下降曲线</span><small>纵轴：对数刻度</small></div>
+                <div class="cost-chart__plot">
+                  <div class="cost-chart__grid" aria-hidden="true"><span>10⁸</span><span>10⁶</span><span>10⁴</span><span>10²</span><span>10⁰</span><span>10⁻²</span></div>
+                  <svg viewBox="0 0 760 360" aria-hidden="true" preserveAspectRatio="none">
+                    <defs>
+                      <filter id="soft-glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                    </defs>
+                    <path class="cost-line cost-line--sequence" d="M22 36 C180 58 245 116 350 174 S570 286 738 324" />
+                    <path class="cost-line cost-line--synthesis" d="M22 76 C165 96 246 140 348 190 S555 268 738 306" />
+                    <circle class="cost-point cost-point--sequence" cx="22" cy="36" r="6"/><circle class="cost-point cost-point--sequence" cx="738" cy="324" r="6"/>
+                    <circle class="cost-point cost-point--synthesis" cx="22" cy="76" r="6"/><circle class="cost-point cost-point--synthesis" cx="738" cy="306" r="6"/>
+                  </svg>
+                  <span class="cost-label cost-label--seq-start">约 1 亿美元<br /><small>单个人类基因组</small></span>
+                  <span class="cost-label cost-label--seq-end">数百美元<br /><small>单个人类基因组</small></span>
+                  <span class="cost-label cost-label--syn-start">约 10 美元 / 碱基</span>
+                  <span class="cost-label cost-label--syn-end">低于 0.001 美元 / 碱基</span>
+                  <div class="cost-chart__years"><span>2000</span><span>2005</span><span>2010</span><span>2015</span><span>2020</span><span>2025</span></div>
+                </div>
+                <div class="cost-chart__key"><span><i></i>人类基因组测序</span><span><i></i>DNA 合成</span></div>
+              </div>
+            </article>
+
+            <article class="data-slide data-slide--position" data-data-slide="1" aria-label="图二：全球研究份额与中国产业链位置">
+              <div class="data-slide__intro">
+                <span class="data-slide__index">02 / WHERE WE STAND</span>
+                <h3>份额不是全部，<br />位置要放回产业链</h3>
+                <p>研究份额说明知识生产的位置；产业链强弱说明成果能否被放大、制造并进入市场。两组口径不能混为一个排名。</p>
+                <div class="data-source"><strong>二级来源</strong><span>研究份额：KISTI · 2025 年 1 月<br />发酵产能：据行业统计，口径待进一步核验</span></div>
+              </div>
+              <div class="position-charts">
+                <div class="glass-chart share-chart" role="img" aria-label="全球合成生物学研究份额：美国25%，中国16%，韩国2%">
+                  <div class="chart-title"><span>全球研究份额</span><small>KISTI · 2025</small></div>
+                  <div class="share-row"><strong>美国</strong><div><i style="--value: 100%"></i></div><b>25%</b></div>
+                  <div class="share-row"><strong>中国</strong><div><i style="--value: 64%"></i></div><b>16%</b></div>
+                  <div class="share-row"><strong>韩国</strong><div><i style="--value: 8%"></i></div><b>2%</b></div>
+                </div>
+                <div class="glass-chart chain-chart" role="img" aria-label="中国产业链上游工具是短板，中游发酵放大和下游产品市场具有优势">
+                  <div class="chart-title"><span>中国在产业链上的位置</span><small>定性判断 + 支撑事实</small></div>
+                  <div class="chain-segment chain-segment--weak"><span>上游</span><strong>菌种与工具</strong><b>短板</b><small>高端设备与关键工具依赖进口</small></div>
+                  <div class="chain-segment chain-segment--strong"><span>中游</span><strong>发酵与放大</strong><b>优势</b><small>发酵产能据行业统计占全球 60% 以上</small></div>
+                  <div class="chain-segment chain-segment--market"><span>下游</span><strong>产品与市场</strong><b>优势</b><small>制造配套完整，应用市场规模大</small></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="data-slide data-slide--impact" data-data-slide="2" aria-label="图三：生物法与石油法效果对比">
+              <div class="data-slide__intro">
+                <span class="data-slide__index">03 / IS IT WORTH IT</span>
+                <h3>同一种分子，<br />换一条制造路线</h3>
+                <p>以 1,3-丙二醇为例，对比的是同一产品的两条生产路线。三个环形分别表示各项指标的下降比例，不把不同口径误合并为整体占比。</p>
+                <div class="data-source data-source--official"><strong>一级来源</strong><span>国家发展改革委<br />《“十四五”生物经济发展规划》系列解读</span></div>
+              </div>
+              <div class="glass-chart impact-chart" role="img" aria-label="生物法相比石油法，原料成本降低37%，能耗降低30%，二氧化碳排放降低63%">
+                <div class="chart-title"><span>1,3-丙二醇 · 生物法相对石油法</span><small>三项独立降幅 / %</small></div>
+                <div class="impact-pies">
+                  <div class="impact-pie-card">
+                    <div class="impact-pie impact-pie--material" style="--value: 37"><span><strong>−37%</strong><small>下降</small></span></div>
+                    <h4>原料成本</h4><p>RAW MATERIAL</p>
+                  </div>
+                  <div class="impact-pie-card">
+                    <div class="impact-pie impact-pie--energy" style="--value: 30"><span><strong>−30%</strong><small>下降</small></span></div>
+                    <h4>能耗</h4><p>ENERGY USE</p>
+                  </div>
+                  <div class="impact-pie-card">
+                    <div class="impact-pie impact-pie--carbon" style="--value: 63"><span><strong>−63%</strong><small>下降</small></span></div>
+                    <h4>二氧化碳排放</h4><p>CO₂ EMISSIONS</p>
+                  </div>
+                </div>
+                <blockquote>来源可追溯、口径一致、对比对象相同。<strong>这是可以进入右上象限的数据。</strong></blockquote>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button class="data-gallery__arrow data-gallery__arrow--prev" type="button" aria-label="上一张数据图">‹</button>
+        <button class="data-gallery__arrow data-gallery__arrow--next" type="button" aria-label="下一张数据图">›</button>
+        <div class="data-gallery__footer">
+          <div class="data-gallery__dots" role="tablist" aria-label="选择数据图">
+            <button class="is-active" type="button" data-data-dot="0" role="tab" aria-selected="true" aria-label="查看成本下降曲线"></button>
+            <button type="button" data-data-dot="1" role="tab" aria-selected="false" aria-label="查看份额与位置"></button>
+            <button type="button" data-data-dot="2" role="tab" aria-selected="false" aria-label="查看效果对比"></button>
+          </div>
+          <p><span data-data-count>01</span> / 03 · 左右翻阅</p>
+        </div>
+      </section>
+      <section id="science-start" class="cell-factory" aria-labelledby="cell-factory-title" data-nav-section="science-start">
         <div class="cell-factory__heading">
           <p>THE CELL FACTORY / 生命制造现场</p>
           <h2 id="cell-factory-title">细胞工厂</h2>
@@ -164,7 +282,7 @@
         </div>
         <p class="cell-factory__hint">移动鼠标探索 · 点击进入板块</p>
       </section>
-      <section class="geo-panel" aria-label="全球合成生物学战略与中国生物制造城市地图">
+      <section class="geo-panel" aria-label="全球合成生物学战略与中国生物制造城市地图" data-nav-section="introduction-start">
         <canvas class="geo-panel__canvas" aria-hidden="true"></canvas>
         <div class="geo-panel__grid" aria-hidden="true"></div>
         <header class="geo-panel__header">
@@ -234,7 +352,7 @@
               <p>抗癌的紫杉醇来自红豆杉树皮——一棵百年红豆杉剥光了，只够治一个病人。</p>
               <p>抗疟疾的青蒿素来自黄花蒿，产量看天吃饭，价格随气候波动。</p>
             </div>
-            <figure class="medicine-figure medicine-figure--cells"><img src="./assets/cell-particles.jpg" alt="细胞与微生物的微观形态" /><figcaption>MICROBIAL CELL / THE NEW FACTORY</figcaption></figure>
+            <figure class="medicine-figure medicine-figure--cells"><img src="./assets/yew-branch.jpg" alt="结有红色果实的红豆杉枝叶" /><figcaption>YEW TREE / THE NATURAL SOURCE OF PACLITAXEL</figcaption></figure>
           </section>
 
           <section class="medicine-section medicine-section--limits" data-medicine-panel="limits">
@@ -258,7 +376,7 @@
           </section>
 
           <section class="medicine-section medicine-section--products" data-medicine-panel="products">
-            <div class="medicine-products__visual"><img src="./assets/medicine.jpg" alt="生物制药实验室与药物分子" /></div>
+            <div class="medicine-products__visual"><img src="./assets/medicine-products.png" alt="药片、胶囊、注射器与药剂瓶" /></div>
             <div class="medicine-products__content">
               <div class="medicine-section__heading"><p>04 / PRODUCTS IN USE</p><h3>已经有的产品</h3></div>
               <div class="medicine-products">
@@ -316,7 +434,7 @@
               <p>中国每年要进口大量大豆，绝大部分用来榨油和做饲料。</p>
               <p>这是一条悬在粮食安全上的隐线——它平时不发声，一发声就是大事。</p>
             </div>
-            <figure class="medicine-figure medicine-figure--cells"><img src="./assets/food.jpg" alt="大面积绿色农田" /><figcaption>LAND / PROTEIN / FOOD SECURITY</figcaption></figure>
+            <figure class="medicine-figure medicine-figure--cells"><img src="./assets/food-soybeans.png" alt="木勺与铺满画面的大豆" /><figcaption>SOYBEAN / PROTEIN / FOOD SECURITY</figcaption></figure>
             <blockquote class="food-mission">合成生物学在这条线上做两件事：<strong>一是造蛋白，二是让作物少吃饭。</strong></blockquote>
           </section>
 
@@ -338,7 +456,7 @@
           </section>
 
           <section class="medicine-section medicine-section--products" data-food-panel="products">
-            <div class="medicine-products__visual"><img src="./assets/food.jpg" alt="粮食生产与绿色农业" /></div>
+            <div class="medicine-products__visual"><img src="./assets/food-farmer.png" alt="农民在收获后的田地中整理作物" /></div>
             <div class="medicine-products__content">
               <div class="medicine-section__heading"><p>04 / PRODUCTS IN USE</p><h3>已经有的产品</h3></div>
               <div class="medicine-products">
@@ -391,7 +509,7 @@
               <p>你身上那件运动服、那条瑜伽裤，很可能已经不是石油做的了。</p>
               <p>化纤、塑料、橡胶——这三样东西的起点，过去都是石油。</p>
             </div>
-            <figure class="medicine-figure"><img src="./assets/clothing.jpg" alt="轻盈透明的生物材料" /><figcaption>BIO-BASED MATERIAL / SAME MOLECULE</figcaption></figure>
+            <figure class="medicine-figure"><img src="./assets/clothing-textiles.png" alt="不同纹理的织物与纱线" /><figcaption>BIO-BASED TEXTILE / SAME MOLECULE</figcaption></figure>
             <blockquote class="food-mission clothing-mission">微生物以糖、淀粉甚至秸秆为食，产出<strong>和石油基完全相同的分子。</strong></blockquote>
           </section>
 
@@ -414,7 +532,7 @@
           </section>
 
           <section class="medicine-section medicine-section--products" data-clothing-panel="products">
-            <div class="medicine-products__visual"><img src="./assets/clothing.jpg" alt="生物基材料与纤维形态" /></div>
+            <div class="medicine-products__visual"><img src="./assets/clothing-towels.png" alt="篮中卷叠的绿色与白色织物" /></div>
             <div class="medicine-products__content">
               <div class="medicine-section__heading"><p>04 / PRODUCTS IN USE</p><h3>已经有的产品</h3></div>
               <div class="medicine-products">
@@ -468,7 +586,7 @@
               <p>前面三条线有个共同点：工厂在厂里生产，产品被运出来。</p>
               <p>这一条不一样——工厂本身被派出去干活。</p>
             </div>
-            <figure class="medicine-figure"><img src="./assets/clean.jpg" alt="水环境与生态循环" /><figcaption>ENGINEERED LIFE / WORKING IN PLACE</figcaption></figure>
+            <figure class="medicine-figure"><img src="./assets/clean-stream.jpg" alt="苔藓覆盖的岩石与清澈溪流" /><figcaption>ECOSYSTEM / WORKING IN PLACE</figcaption></figure>
             <blockquote class="food-mission clean-mission"><strong>它既是工人，也是产品。</strong></blockquote>
           </section>
 
@@ -492,7 +610,7 @@
           </section>
 
           <section class="medicine-section medicine-section--products" data-clean-panel="products">
-            <div class="medicine-products__visual"><img src="./assets/clean.jpg" alt="水体、地球与清洁技术意象" /></div>
+            <div class="medicine-products__visual"><img src="./assets/clean-material.jpg" alt="蓝绿色透明材质与水滴" /></div>
             <div class="medicine-products__content">
               <div class="medicine-section__heading"><p>04 / PRODUCTS IN USE</p><h3>已经有的产品</h3></div>
               <div class="medicine-products">
