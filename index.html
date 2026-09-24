@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#dcecf8" />
+    <title>被写下的指令</title>
+    <script type="module" crossorigin src="./assets/index-CgWo8akW.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BzXFIIVA.css">
+  </head>
+  <body>
+    <main>
+      <section class="intro-panel" aria-labelledby="intro-title">
+        <video class="intro-panel__video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+          <source src="./assets/biology-intro.mp4" type="video/mp4" />
+        </video>
+        <div class="intro-panel__veil" aria-hidden="true"></div>
+        <div class="intro-panel__content">
+          <p class="intro-panel__eyebrow">合成生物学 · 第三次生物科技革命</p>
+          <h1 id="intro-title">借生造物</h1>
+          <div class="intro-panel__lower">
+            <p class="intro-panel__subtitle">为药 · 为食 · 为衣 · 为净</p>
+            <p class="intro-panel__description">
+              让生命成为可编程、可制造、可持续的材料。<br />
+              我们不再只是观察自然，而是开始读懂、设计并重写生命。<br />
+              从一颗细胞，到一件衣服、一种食物、一剂药，<br />
+              生物正在成为下一代制造方式。
+            </p>
+          </div>
+        </div>
+        <span class="intro-panel__scroll" aria-hidden="true">向下探索</span>
+      </section>
+      <section class="story-panel" aria-labelledby="story-title" data-reveal-panel>
+        <div class="ambient-image" aria-hidden="true"></div>
+        <div class="image-field" aria-hidden="true">
+          <video class="story-video" autoplay muted loop playsinline preload="auto">
+            <source src="./assets/vaccine-story.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div id="particle-canvas" aria-hidden="true"></div>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="story-panel__content">
+          <h1 id="story-title" class="sr-only">2021 年的新冠疫苗</h1>
+          <p class="story-copy">
+            <span class="story-line"><strong>2021 年，</strong>你挽起袖子，打了一针新冠疫苗。</span><span class="story-line">那一针里没有病毒，只有一段被人写出来的基因指令。</span><span class="story-line">它进入你的身体，命令你的细胞临时生产一种蛋白质——你的免疫系统认出它、记住它。</span><span class="story-line">那段指令，是人在实验室里，一行一行写出来的。</span>
+          </p>
+          <p class="story-copy__english">
+            MRNA VACCINE / A WRITTEN INSTRUCTION<br />
+            CELLS READ THE CODE,<br />
+            BUILT A PROTEIN,<br />
+            AND TAUGHT THE IMMUNE SYSTEM TO REMEMBER.
+          </p>
+          <div class="story-panel__footer" aria-hidden="true">
+            <span>mRNA / 2021</span>
+            <span class="story-panel__rule"></span>
+            <span>向下探索</span>
+          </div>
+        </div>
+      </section>
+      <section class="story-panel story-panel--third" aria-labelledby="third-title" data-reveal-panel>
+        <div class="image-field" aria-hidden="true">
+          <video class="story-video" autoplay muted loop playsinline preload="auto">
+            <source src="./assets/third-story.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="story-panel__content">
+          <h2 id="third-title" class="sr-only">这件事，叫合成生物学</h2>
+          <div class="story-copy story-copy--third">
+            <p class="story-line story-line--lead"><strong>这件事，叫合成生物学。</strong></p>
+            <p class="story-line story-line--lead">它正在重造你的药、食、衣、净。</p>
+            <p class="story-line story-line--lead">把生命当作一种可以阅读、设计和制造的语言，</p>
+            <p class="story-line story-line--lead">让细胞成为新的工厂，让自然成为新的材料库。</p>
+            <p class="story-line story-line--support">往下读 3 分钟，你会看懂正在发生的第三次生物科技革命 ↓</p>
+          </div>
+          <p class="story-copy__english story-copy__english--third">
+            SYNTHETIC BIOLOGY / THE THIRD BIOLOGICAL REVOLUTION<br />
+            LIFE BECOMES A DESIGNABLE MATERIAL,<br />
+            RESHAPING MEDICINE, FOOD, AND CLOTHING,<br />
+            WHILE OPENING A NEW PATH TO CLEAN TECHNOLOGIES.
+          </p>
+          <div class="story-panel__footer" aria-hidden="true">
+            <span>SYNTHETIC BIOLOGY</span>
+            <span class="story-panel__rule"></span>
+            <span>继续探索</span>
+          </div>
+        </div>
+      </section>
+      <div class="pillar-carousel" aria-label="四个生物制造板块">
+        <button class="pillar-arrow pillar-arrow--prev" type="button" aria-label="上一个板块">‹</button>
+        <div class="pillar-track">
+        <section class="pillar-panel" aria-labelledby="medicine-title">
+        <div class="pillar-copy"><p>01 / BIOLOGICAL MATERIALS</p><button class="pillar-entry" type="button" data-open-detail="medicine" aria-label="进入为药板块"><h2 id="medicine-title">为药</h2><small>点击进入 <span aria-hidden="true">↗</span></small></button><span>精准设计生命，重新定义治疗。</span></div><canvas data-pillar="medicine"></canvas>
+        </section>
+        <section class="pillar-panel" aria-labelledby="food-title">
+        <div class="pillar-copy"><p>02 / BIOLOGICAL MATERIALS</p><button class="pillar-entry" type="button" data-open-detail="food" aria-label="进入为食板块"><h2 id="food-title">为食</h2><small>点击进入 <span aria-hidden="true">↗</span></small></button><span>让生物制造更丰富的日常。</span></div><canvas data-pillar="food"></canvas>
+        </section>
+        <section class="pillar-panel" aria-labelledby="clothing-title">
+        <div class="pillar-copy"><p>03 / BIOLOGICAL MATERIALS</p><button class="pillar-entry" type="button" data-open-detail="clothing" aria-label="进入为衣板块"><h2 id="clothing-title">为衣</h2><small>点击进入 <span aria-hidden="true">↗</span></small></button><span>从细胞开始，编织新的材料。</span></div><canvas data-pillar="clothing"></canvas>
+        </section>
+        <section class="pillar-panel" aria-labelledby="clean-title">
+        <div class="pillar-copy"><p>04 / BIOLOGICAL MATERIALS</p><button class="pillar-entry" type="button" data-open-detail="clean" aria-label="进入为净板块"><h2 id="clean-title">为净</h2><small>点击进入 <span aria-hidden="true">↗</span></small></button><span>让清洁与循环成为生命系统的一部分。</span></div><canvas data-pillar="clean"></canvas>
+        </section>
+        </div>
+        <button class="pillar-arrow pillar-arrow--next" type="button" aria-label="下一个板块">›</button>
+      </div>
+      <section class="gene-panel" aria-labelledby="gene-title" data-reveal-panel>
+        <video class="gene-panel__video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+          <source src="./assets/gene-timeline.mp4" type="video/mp4" />
+        </video>
+        <div class="gene-panel__shade" aria-hidden="true"></div>
+        <h2 id="gene-title" class="sr-only">合成生物学发展时间轴</h2>
+        <ol class="gene-timeline">
+          <li class="gene-event gene-event--2000"><button type="button" data-open-milestone="2000" aria-label="查看 2000 年合成生物学成就"><strong>2000 年</strong><span>控制台到位<br />科学家第一次能“设计”基因开关</span><small>查看详情 ↗</small></button></li>
+          <li class="gene-event gene-event--2003"><button type="button" data-open-milestone="2003" aria-label="查看 2003 年合成生物学成就"><strong>2003 年</strong><span>标准件到位<br />基因零件开始像乐高一样能拼装</span><small>查看详情 ↗</small></button></li>
+          <li class="gene-event gene-event--2010"><button type="button" data-open-milestone="2010" aria-label="查看 2010 年合成生物学成就"><strong>2010 年</strong><span>整座厂房<br />第一次从头建起来</span><small>查看详情 ↗</small></button></li>
+          <li class="gene-event gene-event--2012"><button type="button" data-open-milestone="2012" aria-label="查看 2012 年合成生物学成就"><strong>2012 年</strong><span>改图纸的笔变准了<br />从碰运气变成精确操作</span><small>查看详情 ↗</small></button></li>
+          <li class="gene-event gene-event--2024"><button type="button" data-open-milestone="2024" aria-label="查看 2024 年合成生物学成就"><strong>2024 年</strong><span>工人可以定制了<br />需要什么酶，按需设计一个</span><small>查看详情 ↗</small></button></li>
+        </ol>
+        <div class="gene-panel__summary">
+          <p>从提出这个概念，到造出第一个细胞，<strong>人类用了 100 年。</strong></p>
+          <p>从第一个细胞，到第一个走进你身体的产品，<strong>只用了 10 年。</strong></p>
+        </div>
+        <div class="gene-panel__data">麦肯锡预测，合成生物学未来一二十年内每年可带来至少 <strong>2 万亿美元</strong>直接经济效益。</div>
+      </section>
+      <section class="cell-factory" aria-labelledby="cell-factory-title">
+        <div class="cell-factory__heading">
+          <p>THE CELL FACTORY / 生命制造现场</p>
+          <h2 id="cell-factory-title">细胞工厂</h2>
+          <span>选择一件正在被生命重新制造的事物</span>
+        </div>
+        <div class="cell-factory__collage">
+          <button class="factory-piece factory-piece--1" type="button" data-open-factory="overview" aria-label="查看细胞工厂总览">
+            <img src="./assets/cell-factory-1.png" alt="生物制造生产场景插画" />
+            <span>细胞工厂<small>总览</small></span>
+          </button>
+          <button class="factory-piece factory-piece--2" type="button" data-open-factory="chassis" aria-label="查看细胞厂房">
+            <img src="./assets/cell-factory-2.png" alt="奔跑与健康插画" />
+            <span>厂房<small>细胞与底盘</small></span>
+          </button>
+          <button class="factory-piece factory-piece--3" type="button" data-open-factory="blueprint" aria-label="查看基因图纸">
+            <img src="./assets/cell-factory-3.png" alt="疫苗接种插画" />
+            <span>图纸<small>基因与 DNA</small></span>
+          </button>
+          <button class="factory-piece factory-piece--4" type="button" data-open-factory="workers" aria-label="查看酶工人">
+            <img src="./assets/cell-factory-4.png" alt="食物与营养插画" />
+            <span>工人<small>酶与催化</small></span>
+          </button>
+          <button class="factory-piece factory-piece--5" type="button" data-open-factory="pipeline" aria-label="查看代谢流水线">
+            <img src="./assets/cell-factory-5.png" alt="精准用药插画" />
+            <span>流水线<small>代谢通路</small></span>
+          </button>
+          <button class="factory-piece factory-piece--6" type="button" data-open-factory="console" aria-label="查看细胞控制台">
+            <img src="./assets/cell-factory-6.png" alt="细胞治疗插画" />
+            <span>控制台<small>调控与产量</small></span>
+          </button>
+          <button class="factory-piece factory-piece--7" type="button" data-open-factory="tools" aria-label="查看细胞工厂的工具革命">
+            <img src="./assets/cell-factory-7.png" alt="疾病检测插画" />
+            <span>工具革命<small>从使用到改造</small></span>
+          </button>
+        </div>
+        <p class="cell-factory__hint">移动鼠标探索 · 点击进入板块</p>
+      </section>
+      <section class="geo-panel" aria-label="全球合成生物学战略与中国生物制造城市地图">
+        <canvas class="geo-panel__canvas" aria-hidden="true"></canvas>
+        <div class="geo-panel__grid" aria-hidden="true"></div>
+        <header class="geo-panel__header">
+          <p>GLOBAL SYNTHETIC BIOLOGY / 2025</p>
+          <span>看位置，必须先看对手。</span>
+        </header>
+        <div class="geo-panel__coordinates" aria-hidden="true">CHN · 35.8617° N / 104.1954° E</div>
+        <div class="geo-panel__mode" role="group" aria-label="地图显示模式">
+          <button type="button" data-geo-mode="globe">地球</button>
+          <button class="is-active" type="button" data-geo-mode="map">中国</button>
+        </div>
+        <div class="geo-nodes" aria-label="各国合成生物学战略">
+          <button class="geo-node geo-node--us" type="button" data-open-geo="us"><span>USA</span><strong>美国</strong><small>2022 起</small></button>
+          <button class="geo-node geo-node--eu" type="button" data-open-geo="eu"><span>EU</span><strong>欧盟</strong><small>2024 — 2025</small></button>
+          <button class="geo-node geo-node--uk" type="button" data-open-geo="uk"><span>UK</span><strong>英国</strong><small>2012 起 · 2023 升级</small></button>
+          <button class="geo-node geo-node--china" type="button" data-open-geo="china"><span>CHN</span><strong>中国</strong><small>2007 起 · “十五五”定调</small></button>
+          <button class="geo-node geo-node--jp" type="button" data-open-geo="japan"><span>JPN</span><strong>日本</strong><small>2019 起 · 2024 升级</small></button>
+          <button class="geo-node geo-node--kr" type="button" data-open-geo="korea"><span>KOR</span><strong>韩国</strong><small>2025 · 全球首个</small></button>
+        </div>
+        <div class="geo-cities" aria-label="中国生物制造产业竞争力前四城市">
+          <button class="geo-city geo-city--beijing" type="button" data-open-city="beijing"><span>BEIJING</span><strong>北京</strong><small>政策与人才</small></button>
+          <button class="geo-city geo-city--tianjin" type="button" data-open-city="tianjin"><span>TIANJIN</span><strong>天津</strong><small>工业转化</small></button>
+          <button class="geo-city geo-city--shanghai" type="button" data-open-city="shanghai"><span>SHANGHAI</span><strong>上海</strong><small>源头</small></button>
+          <button class="geo-city geo-city--shenzhen" type="button" data-open-city="shenzhen"><span>SHENZHEN</span><strong>深圳</strong><small>企业密度</small></button>
+        </div>
+        <aside class="geo-city-card" aria-hidden="true">
+          <button class="geo-city-card__close" type="button" aria-label="关闭城市介绍">×</button>
+          <p class="geo-city-card__source">中国工业生物技术发展白皮书 · 2024</p>
+          <article data-city-panel="shanghai"><span>01 / SOURCE</span><h3>上海 <small>源头</small></h3><p>2008 年建成国内第一家合成生物学重点实验室；2023 年出台专项行动方案，张江科学城建成全国首个合成生物创新中心，并叠加全国最强的生物医药基础。</p></article>
+          <article data-city-panel="beijing"><span>02 / POLICY &amp; TALENT</span><h3>北京 <small>政策与人才</small></h3><p>以昌平区为集聚区，明确到 2026 年培育 30 家领军企业，产业规模超过 200 亿元。</p></article>
+          <article data-city-panel="shenzhen"><span>03 / ENTERPRISES</span><h3>深圳 <small>企业密度</small></h3><p>合成生物列为八大未来产业之首；光明区出台全国首个专项扶持政策。2024 年底集聚企业 123 家，总估值近 400 亿元，近三年全国新成立企业约四成落户于此。</p></article>
+          <article data-city-panel="tianjin"><span>04 / INDUSTRIALIZATION</span><h3>天津 <small>工业转化</small></h3><p>国家合成生物技术创新中心、合成生物学海河实验室均落地天津。依托化工产业基础，工业应用与规模化转化最具优势。</p></article>
+        </aside>
+        <div class="geo-share" aria-label="全球合成生物学研究份额，数据来源 KISTI 2025">
+          <p>全球合成生物学研究份额 <span>KISTI · 2025</span></p>
+          <div><span>美国</span><strong>25%</strong></div>
+          <div><span>中国</span><strong>16%</strong></div>
+          <div><span>韩国</span><strong>2%</strong></div>
+        </div>
+        <div class="geo-city-summary"><span>四个城市，各占一段</span><strong>上海出源头，北京出政策，深圳出企业，天津出产能。</strong></div>
+        <p class="geo-panel__hint">点击坐标，查看各国战略</p>
+      </section>
+    </main>
+    <div class="detail-view" aria-hidden="true">
+      <button class="detail-view__close" type="button" aria-label="返回"><span aria-hidden="true">←</span><span>返回</span></button>
+      <div class="detail-view__progress" aria-hidden="true"><span></span></div>
+      <article class="detail-page medicine-detail" data-detail="medicine" aria-labelledby="detail-medicine-title">
+        <header class="medicine-hero">
+          <img class="medicine-hero__image" src="./assets/medicine-pillar.jpg" alt="中药材与传统药物配制场景" />
+          <div class="medicine-hero__shade" aria-hidden="true"></div>
+          <h2 id="detail-medicine-title" class="sr-only">为药｜医疗健康</h2>
+        </header>
+
+        <nav class="medicine-nav" aria-label="为药详情板块">
+          <div class="medicine-nav__intro"><span>MEDICAL &amp; HEALTH</span><strong>这间工厂，造的是药</strong></div>
+          <button class="is-active" type="button" data-medicine-tab="origin"><span>01</span>药从哪里来</button>
+          <button type="button" data-medicine-tab="limits"><span>02</span>为什么需要</button>
+          <button type="button" data-medicine-tab="process"><span>03</span>怎么造出来</button>
+          <button type="button" data-medicine-tab="products"><span>04</span>已有产品</button>
+          <button type="button" data-medicine-tab="china"><span>05</span>中国的位置</button>
+          <button type="button" data-medicine-tab="debate"><span>06</span>争议与未知</button>
+        </nav>
+        <div class="medicine-story">
+          <section class="medicine-section medicine-section--opening is-active" data-medicine-panel="origin">
+            <div class="medicine-section__label"><span>01</span>THE ORIGIN</div>
+            <div class="medicine-opening__copy">
+              <p>抗癌的紫杉醇来自红豆杉树皮——一棵百年红豆杉剥光了，只够治一个病人。</p>
+              <p>抗疟疾的青蒿素来自黄花蒿，产量看天吃饭，价格随气候波动。</p>
+            </div>
+            <figure class="medicine-figure medicine-figure--cells"><img src="./assets/cell-particles.jpg" alt="细胞与微生物的微观形态" /><figcaption>MICROBIAL CELL / THE NEW FACTORY</figcaption></figure>
+          </section>
+
+          <section class="medicine-section medicine-section--limits" data-medicine-panel="limits">
+            <div class="medicine-section__heading"><p>02 / WHY WE NEED IT</p><h3>为什么需要它</h3><span>传统药物制造有两个天花板。</span></div>
+            <div class="medicine-limit-grid">
+              <article><span>01</span><h4>原料天花板</h4><p>植物里的有效成分含量往往只有万分之几。要造一公斤药，可能需要几十吨原料，而且原料本身要占地、要季节、要看年景。</p></article>
+              <article><span>02</span><h4>工艺天花板</h4><p>很多复杂分子，化学合成要几十步反应，每步都要高温高压、有机溶剂，成本高、污染重。</p></article>
+            </div>
+            <blockquote>合成生物学绕开了这两个天花板：<strong>把植物体内的那条合成路线整条搬进微生物，让微生物替你种药。</strong></blockquote>
+          </section>
+
+          <section class="medicine-section medicine-section--process" data-medicine-panel="process">
+            <div class="medicine-section__heading"><p>03 / DESIGN · BUILD · TEST · LEARN</p><h3>怎么造出来的</h3><span>用一座工厂的语言，读懂一颗细胞。</span></div>
+            <ol class="medicine-process">
+              <li><span>01</span><div><h4>选厂房</h4><p>通常是大肠杆菌或酵母，长得快、好养活。</p></div></li>
+              <li><span>02</span><div><h4>看清图纸</h4><p>弄明白植物如何一步步造出分子，把相关基因全部找出来。</p></div></li>
+              <li><span>03</span><div><h4>装流水线</h4><p>把这批基因导入微生物，让它长出植物的生产线。</p></div></li>
+              <li><span>04</span><div><h4>改控制台</h4><p>反复调节基因开关，把产量从“能测出来”推到“能工业化”。</p></div></li>
+            </ol>
+            <p class="medicine-process__note">这一步通常要来回几百轮——这就是“设计—构建—测试—学习”循环最耗时的部分。</p>
+          </section>
+
+          <section class="medicine-section medicine-section--products" data-medicine-panel="products">
+            <div class="medicine-products__visual"><img src="./assets/medicine.jpg" alt="生物制药实验室与药物分子" /></div>
+            <div class="medicine-products__content">
+              <div class="medicine-section__heading"><p>04 / PRODUCTS IN USE</p><h3>已经有的产品</h3></div>
+              <div class="medicine-products">
+                <article><span>1982</span><h4>胰岛素</h4><p>今天绝大多数胰岛素由微生物生产。这是合成生物学最早、最普及的成果。</p></article>
+                <article><span>CELL FACTORY</span><h4>抗体药</h4><p>治疗类风湿、银屑病和多种肿瘤的生物制剂，基本都靠改造过的细胞生产。</p></article>
+                <article><span>2003</span><h4>青蒿素</h4><p>科学家把青蒿素的合成路线搬进酵母，成功产出药物前体。</p></article>
+                <article><span>INSTRUCTION</span><h4>mRNA 疫苗</h4><p>不给成品，给指令，让<strong>你自己的细胞</strong>临时生产抗原。</p></article>
+                <article class="medicine-products__featured"><span>LIVING MEDICINE</span><h4>CAR-T 细胞</h4><p>给病人的免疫 T 细胞装上识别癌细胞的“导航头”，再输回体内。它不是药丸，而是<strong>活着的药</strong>。</p></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="medicine-section medicine-section--china" data-medicine-panel="china">
+            <div class="medicine-section__label"><span>05</span>CHINA'S POSITION</div>
+            <div><h3>中国的位置</h3><p>中国在双抗、ADC 药物、细胞治疗等方向的在研管线和获批产品数量，已处在国际第一梯队。</p><p>更值得关注的是：中国是全球最大的原料药生产国，而这批产能正在被合成生物学改造。谁能用生物法把传统化学合成的成本打下来，谁就掌握下一个十年的定价权。</p></div>
+            <aside><span>DATA / 2017</span><strong>全球首款 CAR-T 疗法获批上市</strong><p>中国已有 CAR-T 产品获批，部分产品初始定价约百万元一针。</p><small>注：具体定价与获批数量随政策和市场变化，请以国家药监局公示为准。</small></aside>
+          </section>
+
+          <section class="medicine-section medicine-section--debate" data-medicine-panel="debate">
+            <div class="medicine-section__heading"><p>06 / THE QUESTIONS REMAIN</p><h3>这条线特有的争议</h3></div>
+            <div class="medicine-debates">
+              <article><span>01</span><h4>价格</h4><p>CAR-T 一针上百万元，是“能救命但救不起”的典型。技术上可行，不等于社会可负担。</p></article>
+              <article><span>02</span><h4>长期的未知</h4><p>被改造过的细胞回输人体后会存活多年。它会不会出问题、多久之后出问题，还没有足够长的时间回答。</p></article>
+              <article><span>03</span><h4>监管上它是什么</h4><p>一种被改造过的活细胞，算药吗？按药品审批还是按医疗技术管理？各国口径至今并不统一。</p></article>
+            </div>
+          </section>
+
+          <footer class="medicine-closing">
+            <img src="./assets/cell-particles.jpg" alt="微观细胞群落" />
+            <div><span>ONE LAST THOUGHT</span><p>这是四条线里离你最近的一条——</p><strong>它已经在你身体里了。</strong></div>
+          </footer>
+        </div>
+      </article>
+      <article class="detail-page medicine-detail food-detail" data-detail="food" aria-labelledby="detail-food-title">
+        <header class="medicine-hero food-hero">
+          <img class="medicine-hero__image" src="./assets/food.jpg" alt="绿色农田与粮食生产景观" />
+          <div class="medicine-hero__shade" aria-hidden="true"></div>
+          <h2 id="detail-food-title" class="sr-only">为食｜农业食品</h2>
+        </header>
+
+        <nav class="medicine-nav" aria-label="为食详情板块">
+          <div class="medicine-nav__intro"><span>AGRICULTURE &amp; FOOD</span><strong>这间工厂，造的是饭</strong></div>
+          <button class="is-active" type="button" data-food-tab="origin"><span>01</span>粮食的隐线</button>
+          <button type="button" data-food-tab="limits"><span>02</span>为什么需要</button>
+          <button type="button" data-food-tab="process"><span>03</span>怎么造出来</button>
+          <button type="button" data-food-tab="products"><span>04</span>已有产品</button>
+          <button type="button" data-food-tab="china"><span>05</span>中国的位置</button>
+          <button type="button" data-food-tab="debate"><span>06</span>争议与现实</button>
+        </nav>
+
+        <div class="medicine-story food-story">
+          <section class="medicine-section medicine-section--opening is-active" data-food-panel="origin">
+            <div class="medicine-section__label"><span>01</span>THE INVISIBLE LINE</div>
+            <div class="medicine-opening__copy">
+              <p>中国每年要进口大量大豆，绝大部分用来榨油和做饲料。</p>
+              <p>这是一条悬在粮食安全上的隐线——它平时不发声，一发声就是大事。</p>
+            </div>
+            <figure class="medicine-figure medicine-figure--cells"><img src="./assets/food.jpg" alt="大面积绿色农田" /><figcaption>LAND / PROTEIN / FOOD SECURITY</figcaption></figure>
+            <blockquote class="food-mission">合成生物学在这条线上做两件事：<strong>一是造蛋白，二是让作物少吃饭。</strong></blockquote>
+          </section>
+
+          <section class="medicine-section medicine-section--limits" data-food-panel="limits">
+            <div class="medicine-section__heading"><p>02 / WHY WE NEED IT</p><h3>为什么需要它</h3><span>蛋白来源与农业投入，都需要新的答案。</span></div>
+            <div class="medicine-limit-grid">
+              <article><span>01</span><h4>饲料蛋白的缺口</h4><p>养殖业的蛋白来源高度依赖进口大豆。而蛋白质不必从地里长出来——微生物也能产蛋白，而且效率高得多。</p></article>
+              <article><span>02</span><h4>化肥的代价</h4><p>氮肥是粮食的命根子，但合成氨能耗巨大；过量施用还会造成土壤板结和水体富营养化。作物有办法从空气中取氮，只是能力还不够。</p></article>
+            </div>
+          </section>
+
+          <section class="medicine-section medicine-section--process" data-food-panel="process">
+            <div class="medicine-section__heading"><p>03 / THREE ROUTES</p><h3>怎么造出来的</h3><span>从发酵罐、作物根部，到体外培养的动物细胞。</span></div>
+            <ol class="medicine-process food-process">
+              <li><span>01</span><div><h4>造蛋白</h4><p>给微生物喂糖、甲醇，甚至工业尾气。菌体在发酵罐中生长，干燥粉碎后就是饲料蛋白。</p></div></li>
+              <li><span>02</span><div><h4>让作物少吃饭</h4><p>把固氮微生物与作物配对，做成根部菌剂或建立共生，让细菌就地把空气中的氮变成作物可用的养分。</p></div></li>
+              <li><span>03</span><div><h4>培养肉</h4><p>取出动物细胞，在体外培养成肌肉组织。成本仍高，但它指向同一个方向：蛋白质不必以动物为中介。</p></div></li>
+            </ol>
+          </section>
+
+          <section class="medicine-section medicine-section--products" data-food-panel="products">
+            <div class="medicine-products__visual"><img src="./assets/food.jpg" alt="粮食生产与绿色农业" /></div>
+            <div class="medicine-products__content">
+              <div class="medicine-section__heading"><p>04 / PRODUCTS IN USE</p><h3>已经有的产品</h3></div>
+              <div class="medicine-products">
+                <article><span>NITROGEN</span><h4>微生物固氮菌剂</h4><p>已经进入大田应用，让作物根部获得更直接的氮源。</p></article>
+                <article><span>FERMENTATION</span><h4>饲用氨基酸</h4><p>赖氨酸、苏氨酸等饲料添加剂基本由发酵生产，是中国最成熟的产业化领域之一。</p></article>
+                <article><span>BIOCONTROL</span><h4>生物农药</h4><p>苏云金芽孢杆菌等微生物农药，已经在大量替代部分化学农药。</p></article>
+                <article><span>FOOD INGREDIENT</span><h4>功能性食品原料</h4><p>透明质酸、部分维生素与代糖，很多由酵母或细菌发酵生产。</p></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="medicine-section medicine-section--china" data-food-panel="china">
+            <div class="medicine-section__label"><span>05</span>CHINA'S POSITION</div>
+            <div><h3>中国的位置</h3><p>这条线在中国的意义高于商业意义。粮食安全是硬约束，而中国的耕地和人均水资源都很紧。</p><p>用工业发酵罐替代一部分耕地和进口，等于给粮食安全加一层保险——<strong>这层保险不便宜，但比没有保险便宜。</strong></p></div>
+            <aside><span>DATA / FIELD APPLICATION</span><strong>微生物固氮正在走进大田</strong><p>相关产品曾因大规模玉米田应用，被《自然》子刊列入“正在改变世界的合成生物学产品”。</p><small>注：中国大豆年度进口量、自给率及具体应用面积，请以海关总署与产品最新公示数据为准。</small></aside>
+          </section>
+
+          <section class="medicine-section medicine-section--debate" data-food-panel="debate">
+            <div class="medicine-section__heading"><p>06 / THE QUESTIONS REMAIN</p><h3>这条线特有的争议</h3></div>
+            <div class="medicine-debates">
+              <article><span>01</span><h4>公众接受度</h4><p>公众对“基因编辑食物”的戒心往往高于对技术本身的了解。这条路线的成败，一半在实验室，一半在舆论场。</p></article>
+              <article><span>02</span><h4>和粮争地</h4><p>如果微生物的原料没有转向秸秆、工业尾气等非粮来源，这条线就可能变成“用粮食造饲料”。</p></article>
+              <article><span>03</span><h4>人造肉的真实成本</h4><p>细胞培养肉目前的成本和产能还撑不起“替代”两个字，宣传口径普遍超前于现实。</p></article>
+            </div>
+            <blockquote class="food-closing">这条路线的目标不是取代农业，<strong>是给农业加一层保险。</strong></blockquote>
+          </section>
+        </div>
+      </article>
+      <article class="detail-page medicine-detail clothing-detail" data-detail="clothing" aria-labelledby="detail-clothing-title">
+        <header class="medicine-hero clothing-hero">
+          <img class="medicine-hero__image" src="./assets/clothing.jpg" alt="生物材料与透明纤维结构" />
+          <div class="medicine-hero__shade" aria-hidden="true"></div>
+          <h2 id="detail-clothing-title" class="sr-only">为衣｜工业与材料</h2>
+        </header>
+
+        <nav class="medicine-nav" aria-label="为衣详情板块">
+          <div class="medicine-nav__intro"><span>INDUSTRY &amp; MATERIALS</span><strong>这间工厂，造的是材料</strong></div>
+          <button class="is-active" type="button" data-clothing-tab="origin"><span>01</span>材料的起点</button>
+          <button type="button" data-clothing-tab="limits"><span>02</span>为什么需要</button>
+          <button type="button" data-clothing-tab="process"><span>03</span>怎么造出来</button>
+          <button type="button" data-clothing-tab="products"><span>04</span>已有产品</button>
+          <button type="button" data-clothing-tab="china"><span>05</span>中国的位置</button>
+          <button type="button" data-clothing-tab="debate"><span>06</span>争议与现实</button>
+        </nav>
+
+        <div class="medicine-story clothing-story">
+          <section class="medicine-section medicine-section--opening is-active" data-clothing-panel="origin">
+            <div class="medicine-section__label"><span>01</span>FROM OIL TO CELLS</div>
+            <div class="medicine-opening__copy">
+              <p>你身上那件运动服、那条瑜伽裤，很可能已经不是石油做的了。</p>
+              <p>化纤、塑料、橡胶——这三样东西的起点，过去都是石油。</p>
+            </div>
+            <figure class="medicine-figure"><img src="./assets/clothing.jpg" alt="轻盈透明的生物材料" /><figcaption>BIO-BASED MATERIAL / SAME MOLECULE</figcaption></figure>
+            <blockquote class="food-mission clothing-mission">微生物以糖、淀粉甚至秸秆为食，产出<strong>和石油基完全相同的分子。</strong></blockquote>
+          </section>
+
+          <section class="medicine-section medicine-section--limits" data-clothing-panel="limits">
+            <div class="medicine-section__heading"><p>02 / WHY WE NEED IT</p><h3>为什么需要它</h3><span>替代有限的原料，也重算工业制造的碳账。</span></div>
+            <div class="medicine-limit-grid">
+              <article><span>01</span><h4>原料的替代</h4><p>石油是有限的，价格看地缘政治的脸色。建立一条不依赖石油的原料路线，本身就具有战略价值。</p></article>
+              <article><span>02</span><h4>碳排放的硬账</h4><p>石油化工是排放大户。在双碳目标下，排放不只是道德问题，更是有配额、有价格、有罚款的成本问题。</p></article>
+            </div>
+          </section>
+
+          <section class="medicine-section medicine-section--process" data-clothing-panel="process">
+            <div class="medicine-section__heading"><p>03 / THE SAME MOLECULE</p><h3>怎么造出来的</h3><span>关键不是做出“相似材料”，而是产出完全相同的分子。</span></div>
+            <ol class="medicine-process clothing-process">
+              <li><span>01</span><div><h4>选厂房</h4><p>选择适合工业发酵的微生物，让它以糖、淀粉或秸秆水解物为食。</p></div></li>
+              <li><span>02</span><div><h4>装流水线</h4><p>把目标分子的合成路径写入细胞，产出与尼龙等石油基材料完全相同的分子。</p></div></li>
+              <li><span>03</span><div><h4>调控制台</h4><p>持续提高转化率、浓度与速度，让产量从实验室走向万吨、十万吨规模。</p></div></li>
+            </ol>
+            <p class="medicine-process__note">分子完全相同，意味着下游纺丝、织造和加工设备不必改变——这是生物基材料能够快速替代的根本原因。</p>
+          </section>
+
+          <section class="medicine-section medicine-section--products" data-clothing-panel="products">
+            <div class="medicine-products__visual"><img src="./assets/clothing.jpg" alt="生物基材料与纤维形态" /></div>
+            <div class="medicine-products__content">
+              <div class="medicine-section__heading"><p>04 / PRODUCTS IN USE</p><h3>已经有的产品</h3></div>
+              <div class="medicine-products">
+                <article><span>PTT</span><h4>1,3-丙二醇</h4><p>高端化纤 PTT 的关键原料，过去来自石油，如今生物法已经实现投产。</p></article>
+                <article><span>NYLON 56</span><h4>生物基尼龙</h4><p>原料来自生物基戊二胺，国内已有企业实现规模化生产。</p></article>
+                <article><span>PHA / PLA</span><h4>可降解塑料</h4><p>由微生物或生物基原料生产，能够在特定条件下降解。</p></article>
+                <article><span>RUBBER</span><h4>仿生合成橡胶</h4><p>天然橡胶的替代路线，主要面向轮胎这一规模巨大的进口替代市场。</p></article>
+                <article><span>FERMENTATION</span><h4>透明质酸</h4><p>通过微生物发酵生产，同时服务医美与食品领域，中国企业在全球产能中占据重要位置。</p></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="medicine-section medicine-section--china" data-clothing-panel="china">
+            <div class="medicine-section__label"><span>05</span>CHINA'S POSITION</div>
+            <div><h3>中国的位置</h3><p><strong>这是四条线里中国位置最有利的一条。</strong></p><p>中国拥有规模巨大的纺织与材料下游、完整的发酵工业基础，以及双碳目标带来的明确政策推力。生产端、应用端与政策端在这里同时到位。</p></div>
+            <aside><span>DATA / 1,3-PROPANEDIOL</span><strong>生物法正在重写成本与碳排放</strong><p>相关规划解读数据显示，相比石油法，生物法可降低原料成本与能耗，并显著减少二氧化碳排放。</p><small>参考：国家发改委《“十四五”生物经济发展规划》系列解读。具体比例以原始技术路线和项目口径为准。</small></aside>
+          </section>
+
+          <section class="medicine-section medicine-section--debate" data-clothing-panel="debate">
+            <div class="medicine-section__heading"><p>06 / THE QUESTIONS REMAIN</p><h3>这条线特有的争议</h3></div>
+            <div class="medicine-debates">
+              <article><span>01</span><h4>成本仍然偏高</h4><p>除少数品类外，生物法材料仍难在价格上击败石油基材料；竞争力高度依赖油价与碳价。</p></article>
+              <article><span>02</span><h4>“可降解”被滥用</h4><p>许多可降解塑料需要工业堆肥的高温高湿环境。丢进自然环境，并不会自动快速消失。</p></article>
+              <article><span>03</span><h4>和粮争地</h4><p>材料用量远大于食品。一旦大规模铺开，糖和淀粉原料可能直接与饲料、口粮竞争。</p></article>
+            </div>
+            <blockquote class="food-closing clothing-closing">这是四条线里最不起眼、但最要紧的一条——<strong>它决定这个产业能不能真正上规模。</strong></blockquote>
+          </section>
+        </div>
+      </article>
+      <article class="detail-page medicine-detail clean-detail" data-detail="clean" aria-labelledby="detail-clean-title">
+        <header class="medicine-hero clean-hero">
+          <img class="medicine-hero__image" src="./assets/clean.jpg" alt="清澈水体与地球生态意象" />
+          <div class="medicine-hero__shade" aria-hidden="true"></div>
+          <h2 id="detail-clean-title" class="sr-only">为净｜生态环保</h2>
+        </header>
+
+        <nav class="medicine-nav" aria-label="为净详情板块">
+          <div class="medicine-nav__intro"><span>ECOLOGY &amp; ENVIRONMENT</span><strong>这间工厂，被派出去干活</strong></div>
+          <button class="is-active" type="button" data-clean-tab="origin"><span>01</span>工厂即产品</button>
+          <button type="button" data-clean-tab="limits"><span>02</span>为什么需要</button>
+          <button type="button" data-clean-tab="process"><span>03</span>怎么造出来</button>
+          <button type="button" data-clean-tab="products"><span>04</span>已有产品</button>
+          <button type="button" data-clean-tab="china"><span>05</span>中国的位置</button>
+          <button type="button" data-clean-tab="debate"><span>06</span>风险与争议</button>
+        </nav>
+
+        <div class="medicine-story clean-story">
+          <section class="medicine-section medicine-section--opening is-active" data-clean-panel="origin">
+            <div class="medicine-section__label"><span>01</span>THE FACTORY GOES OUT</div>
+            <div class="medicine-opening__copy">
+              <p>前面三条线有个共同点：工厂在厂里生产，产品被运出来。</p>
+              <p>这一条不一样——工厂本身被派出去干活。</p>
+            </div>
+            <figure class="medicine-figure"><img src="./assets/clean.jpg" alt="水环境与生态循环" /><figcaption>ENGINEERED LIFE / WORKING IN PLACE</figcaption></figure>
+            <blockquote class="food-mission clean-mission"><strong>它既是工人，也是产品。</strong></blockquote>
+          </section>
+
+          <section class="medicine-section medicine-section--limits" data-clean-panel="limits">
+            <div class="medicine-section__heading"><p>02 / WHY WE NEED IT</p><h3>为什么需要它</h3><span>有些事运不过去，只能在污染发生的地方完成。</span></div>
+            <div class="medicine-debates clean-needs">
+              <article><span>01</span><h4>塑料污染</h4><p>回收依赖收集、运输和分拣，成本常常高到不可行。如果生物系统能在原地把塑料拆掉，处理路径将被彻底改变。</p></article>
+              <article><span>02</span><h4>工业碳排放</h4><p>过去的思路是把二氧化碳封存到地下。但二氧化碳也是原料，就地转化能重新定义“废气”。</p></article>
+              <article><span>03</span><h4>土壤污染</h4><p>化工场地的有机污染渗入土壤，整体挖走成本极高。让微生物在原地缓慢分解，往往是更现实的解法。</p></article>
+            </div>
+          </section>
+
+          <section class="medicine-section medicine-section--process" data-clean-panel="process">
+            <div class="medicine-section__heading"><p>03 / RELEASED TO WORK</p><h3>怎么造出来的</h3><span>方法与前三条线相同，但最后一步是走出发酵罐。</span></div>
+            <ol class="medicine-process clean-process">
+              <li><span>01</span><div><h4>造降解酶</h4><p>寻找能分解塑料的酶，提高效率与稳定性，使它能够在更温和的条件下工作。</p></div></li>
+              <li><span>02</span><div><h4>造碳利用菌</h4><p>让微生物以二氧化碳为碳源，将它转化为淀粉、化学品或燃料。</p></div></li>
+              <li><span>03</span><div><h4>造治理菌群</h4><p>针对特定污染物设计微生物群落，用于化工场地、农田、水体的原位修复。</p></div></li>
+            </ol>
+            <p class="medicine-process__note">2021 年，中国科研团队首次实现二氧化碳到淀粉的从头合成。它证明了：<strong>废气可以是原料，碳排放可以是起点。</strong></p>
+          </section>
+
+          <section class="medicine-section medicine-section--products" data-clean-panel="products">
+            <div class="medicine-products__visual"><img src="./assets/clean.jpg" alt="水体、地球与清洁技术意象" /></div>
+            <div class="medicine-products__content">
+              <div class="medicine-section__heading"><p>04 / PRODUCTS IN USE</p><h3>已经有的产品</h3></div>
+              <div class="medicine-products">
+                <article><span>PET</span><h4>PET 降解酶</h4><p>解聚塑料瓶的高效酶，在适宜条件下可把漫长的降解过程压缩到以周计。</p></article>
+                <article><span>SAF</span><h4>生物航煤</h4><p>利用地沟油和废弃油脂生产的航空燃料，已经在部分航班中实际加注。</p></article>
+                <article><span>CARBON USE</span><h4>二氧化碳制化学品</h4><p>利用二氧化碳生产甲醇和小分子化学品，已有工业示范装置。</p></article>
+                <article><span>BIOREMEDIATION</span><h4>工程菌治理污染</h4><p>为石油泄漏和化工场地修复设计的定制菌群，直接在污染现场工作。</p></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="medicine-section medicine-section--china" data-clean-panel="china">
+            <div class="medicine-section__label"><span>05</span>CHINA'S POSITION</div>
+            <div><h3>中国的位置</h3><p>这条线直接对应双碳目标，政策推力最强。</p><p>中国同时是大型排放国和制造业大国，这意味着碳利用技术在中国拥有巨大的应用场景——<strong>它不只是环保义务，也是产业机会。</strong></p></div>
+            <aside><span>DATA / 2021</span><strong>二氧化碳到淀粉的从头合成</strong><p>2021 年，中国科研团队在国际上首次实现这一人工合成路线。</p><small>注：相关结论与参与机构名称应以 2021 年原始论文及科研机构公开信息为准。</small></aside>
+          </section>
+
+          <section class="medicine-section medicine-section--debate" data-clean-panel="debate">
+            <div class="medicine-section__heading"><p>06 / THE QUESTIONS REMAIN</p><h3>这条线特有的争议</h3></div>
+            <div class="medicine-debates">
+              <article><span>01</span><h4>释放的不可逆性</h4><p>把设计过的微生物放进自然环境，意味着放弃回收的可能。存活、扩散与基因传递都难以事先完全确认。</p></article>
+              <article><span>02</span><h4>效果常被夸大</h4><p>“几周降解塑料”来自理想实验条件。真实环境中的温度、湿度和菌群竞争都会降低效率。</p></article>
+              <article><span>03</span><h4>监管几乎空白</h4><p>封闭发酵已有相对成熟的监管体系，但环境释放型工程菌在全球仍缺乏完整的评估和审批框架。</p></article>
+            </div>
+            <blockquote class="food-closing clean-closing">这是四条线里风险最高的一条，<strong>也是最不可替代的一条。</strong></blockquote>
+          </section>
+        </div>
+      </article>
+    </div>
+    <div class="geo-detail" aria-hidden="true">
+      <button class="geo-detail__close" type="button" aria-label="返回中国坐标"><span aria-hidden="true">←</span><span>返回</span></button>
+      <nav class="geo-detail__nav" aria-label="国家与地区">
+        <button type="button" data-geo-nav="us">美国</button><button type="button" data-geo-nav="eu">欧盟</button><button type="button" data-geo-nav="uk">英国</button><button type="button" data-geo-nav="japan">日本</button><button type="button" data-geo-nav="korea">韩国</button><button type="button" data-geo-nav="china">中国</button>
+      </nav>
+      <article class="geo-country" data-geo-country="us"><p>01 / UNITED STATES</p><h2>美国 <strong>25%</strong></h2><span>2022 起</span><h3>把生物制造写进国家安全</h3><div><p>美国启动国家生物技术与生物制造倡议，国防部规划 <strong>12 亿美元</strong>建设生物制造基础设施。</p><p>2025 年其国家安全委员会报告直接提出“加速本国创新、迟滞中国发展”，建议未来五年至少投入 <strong>150 亿美元</strong>。</p></div></article>
+      <article class="geo-country" data-geo-country="eu"><p>02 / EUROPEAN UNION</p><h2>欧盟</h2><span>2024 — 2025</span><h3>从产业通信走向生物经济战略</h3><div><p>欧盟发布《促进欧盟生物技术和生物制造》通信，并在 2025 年更新《欧盟生物经济战略》。</p><p>目标是 <strong>2040 年成为全球领导者</strong>，并提出到 2030 年以生物基材料替代 25% 的石油基化工产品。</p></div></article>
+      <article class="geo-country" data-geo-country="uk"><p>03 / UNITED KINGDOM</p><h2>英国</h2><span>2012 起 · 2023 升级</span><h3>最早建立工程生物学路线图</h3><div><p>英国 2012 年发布《合成生物学路线图》，2023 年升级为《工程生物学国家愿景》。</p><p>投入 <strong>1.02 亿英镑</strong>，在 6 所大学建设研究中心，并布局 4 个 DNA 合成铸造厂。</p></div></article>
+      <article class="geo-country" data-geo-country="japan"><p>04 / JAPAN</p><h2>日本</h2><span>2019 起 · 2024 升级</span><h3>用市场规模倒推产业能力</h3><div><p>《生物经济战略》把生物制造列为三大支柱之一，目标是到 <strong>2030 年形成 100 万亿日元</strong>市场规模。</p><p>日本已为相关领域拨出 <strong>1 万亿日元</strong>预算，持续推动研发成果进入产业链。</p></div></article>
+      <article class="geo-country" data-geo-country="korea"><p>05 / SOUTH KOREA</p><h2>韩国 <strong>2%</strong></h2><span>2025 · 全球首个</span><h3>用专门立法加速追赶</h3><div><p>韩国通过《合成生物学促进法》，成为 <strong>全球第一部专门为合成生物学立法的法律</strong>。</p><p>起因很直接：其全球研究份额只有 2%，立法的核心目标就是缩短转化周期、加速追赶。</p></div></article>
+      <article class="geo-country geo-country--china" data-geo-country="china">
+        <p>06 / CHINA · INDUSTRIAL CHAIN</p>
+        <h2>中国 <strong>16%</strong></h2>
+        <span>产业链真实坐标</span>
+        <h3>中国的位置，不是一条平线</h3>
+        <div class="geo-country__intro"><p>前两根轴给的是整体印象。真正的坐标在产业链上——把链条切成三段，强弱立刻分开。</p></div>
+        <div class="geo-chain" aria-label="中国合成生物学产业链优势与短板">
+          <section class="geo-chain__segment geo-chain__segment--weak"><span>短板</span><small>01 / UPSTREAM</small><h4>上游 · 菌种与工具</h4><p>高端 DNA 合成仪、高通量筛选系统、自动化生物铸造平台，据行业分析 <strong>80% 以上依赖进口</strong>；关键工具酶和底盘细胞的核心专利，大多不在自己手里。</p></section>
+          <section class="geo-chain__segment"><span>优势</span><small>02 / MIDSTREAM</small><h4>中游 · 发酵与放大</h4><p>发酵产能占全球 <strong>60% 以上</strong>，是全球最大的发酵产品生产国。这一段的规模优势是几十年攒下来的，别人短期内拿不走。</p></section>
+          <section class="geo-chain__segment"><span>优势</span><small>03 / DOWNSTREAM</small><h4>下游 · 产品与市场</h4><p>最完整的制造业配套，加上最大的应用市场。从一个实验室成果到万吨级产线，中国的落地速度是别处比不了的。</p></section>
+        </div>
+        <blockquote class="geo-chain__conclusion">能造——但造东西的工具，<strong>还有八成在别人手里。</strong></blockquote>
+      </article>
+    </div>
+
+    <div class="factory-view" aria-hidden="true">
+      <button class="factory-view__close" type="button" aria-label="返回细胞工厂"><span aria-hidden="true">←</span><span>返回</span></button>
+      <nav class="factory-view__nav" aria-label="细胞工厂组成">
+        <button type="button" data-factory-nav="overview">总览</button><button type="button" data-factory-nav="chassis">厂房</button><button type="button" data-factory-nav="blueprint">图纸</button><button type="button" data-factory-nav="workers">工人</button><button type="button" data-factory-nav="pipeline">流水线</button><button type="button" data-factory-nav="console">控制台</button><button type="button" data-factory-nav="tools">工具革命</button>
+      </nav>
+
+      <article class="factory-page" data-factory-page="overview">
+        <div class="factory-page__copy"><p class="factory-page__eyebrow">01 / THE CELL FACTORY</p><h2>把细胞，<br />当成一座工厂</h2><p class="factory-page__lead">不用电，不用高温高压，也不用刺鼻的有机溶剂。只要喂进去一点糖，它就在常温常压下，把原料变成我们需要的东西。</p><p>这样的工厂不是科幻。它已经在地球上运转了 35 亿年：酵母把糖变成酒精，青霉菌把糖变成青霉素，人体细胞把食物变成肌肉与血液。过去几千年，我们只会使用它；合成生物学开始学习如何改造和经营它。</p><blockquote>合成生物学做的事只有一件：<strong>把细胞当成一座工厂来经营。</strong></blockquote></div>
+        <img src="./assets/cell-factory-1.png" alt="细胞工厂总览插画" />
+      </article>
+
+      <article class="factory-page" data-factory-page="chassis">
+        <div class="factory-page__copy"><p class="factory-page__eyebrow">02 / CHASSIS</p><h2>厂房，<br />是细胞本身</h2><p class="factory-page__lead">业内把承担生产任务的细胞叫作“底盘”。不同底盘，就像不同城市里的厂房，各有适合的生产条件。</p><div class="factory-page__grid"><section><span>常用底盘</span><h3>大肠杆菌</h3><p>生长快、遗传工具成熟，适合生产许多蛋白质和小分子，是实验室和工业里最常见的底盘之一。</p></section><section><span>复杂制造</span><h3>酵母</h3><p>拥有更复杂的细胞结构，更擅长折叠蛋白和组装植物来源的长代谢路线。</p></section><section><span>选择标准</span><h3>不是越快越好</h3><p>还要看耐受性、培养成本、产物毒性与后续纯化。选错厂房，再好的图纸也难以量产。</p></section></div></div>
+        <img src="./assets/cell-factory-2.png" alt="细胞底盘插画" />
+      </article>
+
+      <article class="factory-page" data-factory-page="blueprint">
+        <div class="factory-page__copy"><p class="factory-page__eyebrow">03 / BLUEPRINT</p><h2>图纸，<br />是基因</h2><p class="factory-page__lead">DNA 不只是遗传信息，也是生产说明书。它规定要制造哪些蛋白、何时启动、做到什么程度。</p><div class="factory-page__grid"><section><span>编码区</span><h3>写下要造什么</h3><p>基因序列决定蛋白质的氨基酸顺序，也决定酶最终能完成哪一种化学反应。</p></section><section><span>调控区</span><h3>写下何时开工</h3><p>启动子和终止子控制生产的开始与结束，调控元件决定信号出现时哪些基因被读取。</p></section><section><span>设计</span><h3>重新排列说明书</h3><p>研究者可以组合来自不同物种的基因，把原本不存在于同一细胞中的能力装进一个底盘。</p></section></div></div>
+        <img src="./assets/cell-factory-3.png" alt="基因图纸插画" />
+      </article>
+
+      <article class="factory-page" data-factory-page="workers">
+        <div class="factory-page__copy"><p class="factory-page__eyebrow">04 / ENZYMES</p><h2>工人，<br />是酶</h2><p class="factory-page__lead">图纸不会自己变成产品。真正完成切割、拼接和转化的是酶，它们是细胞工厂里唯一真正动手的工人。</p><div class="factory-page__grid"><section><span>催化</span><h3>降低反应门槛</h3><p>酶让原本需要高温高压的反应，在温和环境下快速发生，并对目标分子保持高度选择性。</p></section><section><span>分工</span><h3>一个工人做一步</h3><p>多数酶只擅长一种反应。复杂产品往往需要多个酶接力，任何一步迟缓都会堵塞整条生产线。</p></section><section><span>定制</span><h3>改造更好的工人</h3><p>定向进化和计算设计可以提高酶的速度、稳定性与耐受性，让它适应工业环境。</p></section></div></div>
+        <img src="./assets/cell-factory-4.png" alt="酶与催化插画" />
+      </article>
+
+      <article class="factory-page" data-factory-page="pipeline">
+        <div class="factory-page__copy"><p class="factory-page__eyebrow">05 / METABOLIC PATHWAY</p><h2>流水线，<br />是代谢通路</h2><p class="factory-page__lead">一个反应接着一个反应，原料从这头进去，产品从那头出来。代谢通路就是细胞内部相互连接的生产线。</p><div class="factory-page__grid"><section><span>输入</span><h3>糖只是起点</h3><p>葡萄糖、甲醇、植物残渣甚至工业尾气，都可能成为细胞获取碳与能量的原料。</p></section><section><span>瓶颈</span><h3>最慢一步决定产量</h3><p>中间产物积累会浪费原料甚至毒害细胞，需要平衡每个酶的表达量，让物料持续向前流动。</p></section><section><span>输出</span><h3>从毫克走向万吨</h3><p>实验室里“能检测到”只是开始。真正的生产线必须持续、稳定地给出高浓度产品。</p></section></div></div>
+        <img src="./assets/cell-factory-5.png" alt="代谢流水线插画" />
+      </article>
+
+      <article class="factory-page" data-factory-page="console">
+        <div class="factory-page__copy"><p class="factory-page__eyebrow">06 / CONTROL SYSTEM</p><h2>控制台，<br />决定开多大</h2><p class="factory-page__lead">让一条生产线存在并不难，难的是决定什么时候开、开多大，以及如何避免把厂房本身累垮。</p><div class="factory-page__grid"><section><span>开关</span><h3>感知环境信号</h3><p>基因开关能够响应温度、营养或特定分子，在合适的时刻开启目标通路。</p></section><section><span>分配</span><h3>生长还是生产</h3><p>细胞既要维持生命又要替人造产品。控制系统需要在两者之间重新分配有限的能量与原料。</p></section><section><span>反馈</span><h3>让系统自己纠偏</h3><p>传感器读取中间产物，再自动调整基因表达，使生产线在波动中保持稳定。</p></section></div></div>
+        <img src="./assets/cell-factory-6.png" alt="细胞控制系统插画" />
+      </article>
+
+      <article class="factory-page" data-factory-page="tools">
+        <div class="factory-page__copy"><p class="factory-page__eyebrow">07 / FROM USE TO DESIGN</p><h2>隔开的不是原理，<br />是工具</h2><p class="factory-page__lead">发酵并不新鲜。真正的新变化，是人类终于拥有了读取、改写、装配和测试生命系统的成套工具。</p><div class="factory-page__grid"><section><span>读取</span><h3>测序看清图纸</h3><p>更快、更便宜的 DNA 测序让研究者能够比较物种、寻找基因，并追踪改造后的变化。</p></section><section><span>改写</span><h3>基因编辑修改图纸</h3><p>CRISPR 等工具让删除、插入与调控变得精准，试错周期从数月缩短到数周甚至数天。</p></section><section><span>迭代</span><h3>设计—构建—测试—学习</h3><p>自动化实验和数据模型把每轮结果送回下一轮设计，细胞工厂由手工调试走向工程化迭代。</p></section></div><blockquote>生物学和工业制造之间隔的从来不是原理，<strong>是工具。</strong></blockquote></div>
+        <img src="./assets/cell-factory-7.png" alt="细胞工厂工具革命插画" />
+      </article>
+    </div>
+
+    <div class="milestone-view" aria-hidden="true">
+      <video class="milestone-view__video" autoplay muted loop playsinline preload="auto" aria-hidden="true"><source src="./assets/gene-timeline.mp4" type="video/mp4" /></video>
+      <div class="milestone-view__shade" aria-hidden="true"></div>
+      <button class="milestone-view__close" type="button" aria-label="返回"><span aria-hidden="true">←</span><span>返回</span></button>
+      <nav class="milestone-nav" aria-label="合成生物学里程碑年份">
+        <button type="button" data-milestone-nav="2000">2000</button><button type="button" data-milestone-nav="2003">2003</button><button type="button" data-milestone-nav="2010">2010</button><button type="button" data-milestone-nav="2012">2012</button><button type="button" data-milestone-nav="2024">2024</button>
+      </nav>
+      <article class="milestone-page" data-milestone="2000">
+        <p class="milestone-page__eyebrow">01 / GENETIC CIRCUITS</p><h2>2000</h2><img class="milestone-page__visual" src="./assets/cell-particles.jpg" alt="细胞与基因控制的微观意象" /><div class="milestone-page__headline"><span>控制台到位</span><h3>生命第一次拥有<br />可设计的开关</h3></div>
+        <div class="milestone-page__facts"><section><small>代表成果</small><h4>基因开关与振荡器</h4><p>科学家分别构建出可在两种状态间切换的“遗传拨动开关”和周期性运行的“抑制振荡器”。它们是最早被人工设计并在细胞内工作的基因电路。</p></section><section><small>技术突破</small><h4>从观察到控制</h4><p>基因不再只是被读取的自然信息。启动子、抑制蛋白和反馈回路开始像电子元件一样，被组织成能够执行逻辑的控制系统。</p></section><section><small>为什么重要</small><h4>合成生物学的起点</h4><p>这一年证明了细胞行为可以被编程。此后的生物传感器、智能药物和细胞治疗，都建立在“基因电路可以设计”的前提上。</p></section></div>
+      </article>
+      <article class="milestone-page" data-milestone="2003">
+        <p class="milestone-page__eyebrow">02 / STANDARD BIOLOGICAL PARTS</p><h2>2003</h2><img class="milestone-page__visual" src="./assets/synthetic-biology-cells.jpg" alt="生物零件与细胞结构意象" /><div class="milestone-page__headline"><span>标准件到位</span><h3>基因零件开始<br />像积木一样组合</h3></div>
+        <div class="milestone-page__facts"><section><small>代表成果</small><h4>BioBrick 与 iGEM 起步</h4><p>MIT 的教学项目开始让学生使用标准化生物零件构建系统，并逐步发展为 iGEM。标准零件库让设计可以被记录、共享和复用。</p></section><section><small>技术突破</small><h4>统一接口</h4><p>启动子、核糖体结合位点和编码序列有了模块化描述与装配规则。不同团队第一次能够在共同规范下交换设计。</p></section><section><small>为什么重要</small><h4>工程协作成为可能</h4><p>标准化让合成生物学从单个实验室的手艺，转向多人协作的工程体系。今天的自动化设计与生物铸造厂都继承了这一思想。</p></section></div>
+      </article>
+      <article class="milestone-page" data-milestone="2010">
+        <p class="milestone-page__eyebrow">03 / SYNTHETIC GENOME</p><h2>2010</h2><img class="milestone-page__visual" src="./assets/cell-particles.jpg" alt="合成细胞的微观意象" /><div class="milestone-page__headline"><span>整座厂房建起来</span><h3>合成基因组<br />第一次接管细胞</h3></div>
+        <div class="milestone-page__facts"><section><small>代表成果</small><h4>JCVI-syn1.0</h4><p>文特尔研究所合成约 108 万碱基对的细菌基因组，并将其移入受体细胞。新细胞能够生长、分裂，并由合成基因组控制。</p></section><section><small>技术突破</small><h4>从零件到全基因组</h4><p>研究者完成了大规模 DNA 设计、合成、拼接、纠错和移植，证明整套遗传操作系统能够由数字序列重新构建。</p></section><section><small>边界说明</small><h4>不是“从无到有造生命”</h4><p>细胞膜、核糖体和代谢机器来自原有受体细胞。真正从头合成的是控制这些机器的基因组，而非整颗细胞的所有结构。</p></section></div>
+      </article>
+      <article class="milestone-page" data-milestone="2012">
+        <p class="milestone-page__eyebrow">04 / PRECISE GENE EDITING</p><h2>2012</h2><img class="milestone-page__visual" src="./assets/synthetic-biology-cells.jpg" alt="精准基因编辑的细胞意象" /><div class="milestone-page__headline"><span>改图纸的笔变准了</span><h3>CRISPR-Cas9 成为<br />可编程编辑工具</h3></div>
+        <div class="milestone-page__facts"><section><small>代表成果</small><h4>RNA 引导的 Cas9</h4><p>研究证明 Cas9 可以由人工设计的向导 RNA 引导，在指定 DNA 位置完成切割。改变向导序列，就能改变编辑目标。</p></section><section><small>技术突破</small><h4>低成本、易编程、可扩展</h4><p>过去的基因编辑工具需要为每个目标重新设计蛋白质；CRISPR 主要通过更换一小段 RNA 完成重定向，大幅降低了门槛。</p></section><section><small>为什么重要</small><h4>设计进入快速迭代</h4><p>基因敲除、插入与调控变得更直接，合成生物学的“设计—构建—测试—学习”循环因此明显加速。</p></section></div>
+      </article>
+      <article class="milestone-page" data-milestone="2024">
+        <p class="milestone-page__eyebrow">05 / AI PROTEIN DESIGN</p><h2>2024</h2><img class="milestone-page__visual" src="./assets/cell-particles.jpg" alt="人工智能蛋白质设计的微观意象" /><div class="milestone-page__headline"><span>工人可以定制了</span><h3>AI 开始按需求<br />设计蛋白质</h3></div>
+        <div class="milestone-page__facts"><section><small>代表成果</small><h4>结构预测与计算设计获认可</h4><p>2024 年诺贝尔化学奖授予计算蛋白质设计与蛋白质结构预测领域的关键贡献者，标志着 AI 与计算设计进入生命科学主工具箱。</p></section><section><small>技术突破</small><h4>从寻找蛋白到生成蛋白</h4><p>模型能够在巨大序列空间中提出全新结构，再由实验筛选验证。研究目标从“自然界有没有”转向“任务需要什么”。</p></section><section><small>现实边界</small><h4>设计不等于交付</h4><p>AI 提出的蛋白仍需经过表达、稳定性、活性与安全性验证。“按需设计酶”已经成为方向，但并非所有设计都能直接工业化。</p></section></div>
+      </article>
+    </div>
+  </body>
+</html>
