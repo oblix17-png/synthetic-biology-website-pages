@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#dcecf8" />
-    <title>被写下的指令</title>
-    <script type="module" crossorigin src="./assets/index-N2u2Ad0-.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-_5rAIwju.css">
+    <title>合成生物</title>
+    <script type="module" crossorigin src="./assets/index-BeSRMZP0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DQotGi6U.css">
   </head>
   <body>
     <nav class="site-nav" aria-label="页面章节导航">
-      <div class="site-nav__brand">借生造物</div>
+      <div class="site-nav__brand">
+        <img src="./assets/derived-creation-logo.png" alt="借生造物" />
+      </div>
       <div class="site-nav__sections">
         <button class="is-active" type="button" data-nav-target="intro-start">进入页</button>
         <button type="button" data-nav-target="preface-start">前言</button>
         <button type="button" data-nav-target="introduction-start">介绍</button>
-        <button type="button" data-nav-target="science-start">趣味科普</button>
+        <button type="button" data-nav-target="application-start">应用</button>
       </div>
       <div class="site-nav__actions" aria-hidden="true"></div>
     </nav>
@@ -164,7 +166,8 @@
                   <div class="cost-chart__grid" aria-hidden="true"><span>10⁸</span><span>10⁶</span><span>10⁴</span><span>10²</span><span>10⁰</span><span>10⁻²</span></div>
                   <svg viewBox="0 0 760 360" aria-hidden="true" preserveAspectRatio="none">
                     <defs>
-                      <filter id="soft-glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                      <linearGradient id="sequence-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8f5ce" stop-opacity=".92"/><stop offset=".5" stop-color="#c8dbaa" stop-opacity=".7"/><stop offset="1" stop-color="#a9bd91" stop-opacity=".9"/></linearGradient>
+                      <linearGradient id="synthesis-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f0d7dc" stop-opacity=".9"/><stop offset=".52" stop-color="#d7acb5" stop-opacity=".7"/><stop offset="1" stop-color="#c28f9c" stop-opacity=".9"/></linearGradient>
                     </defs>
                     <path class="cost-line cost-line--sequence" d="M22 36 C180 58 245 116 350 174 S570 286 738 324" />
                     <path class="cost-line cost-line--synthesis" d="M22 76 C165 96 246 140 348 190 S555 268 738 306" />
@@ -215,15 +218,15 @@
                 <div class="chart-title"><span>1,3-丙二醇 · 生物法相对石油法</span><small>三项独立降幅 / %</small></div>
                 <div class="impact-pies">
                   <div class="impact-pie-card">
-                    <div class="impact-pie impact-pie--material" style="--value: 37"><span><strong>−37%</strong><small>下降</small></span></div>
+                    <div class="impact-pie impact-pie--material" style="--value: 37"><svg viewBox="0 0 112 112" aria-hidden="true"><circle class="impact-pie__track" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__glow" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__arc" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__shine" cx="56" cy="56" r="45" pathLength="100"/></svg><span><strong>−37%</strong><small>下降</small></span></div>
                     <h4>原料成本</h4><p>RAW MATERIAL</p>
                   </div>
                   <div class="impact-pie-card">
-                    <div class="impact-pie impact-pie--energy" style="--value: 30"><span><strong>−30%</strong><small>下降</small></span></div>
+                    <div class="impact-pie impact-pie--energy" style="--value: 30"><svg viewBox="0 0 112 112" aria-hidden="true"><circle class="impact-pie__track" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__glow" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__arc" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__shine" cx="56" cy="56" r="45" pathLength="100"/></svg><span><strong>−30%</strong><small>下降</small></span></div>
                     <h4>能耗</h4><p>ENERGY USE</p>
                   </div>
                   <div class="impact-pie-card">
-                    <div class="impact-pie impact-pie--carbon" style="--value: 63"><span><strong>−63%</strong><small>下降</small></span></div>
+                    <div class="impact-pie impact-pie--carbon" style="--value: 63"><svg viewBox="0 0 112 112" aria-hidden="true"><circle class="impact-pie__track" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__glow" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__arc" cx="56" cy="56" r="45" pathLength="100"/><circle class="impact-pie__shine" cx="56" cy="56" r="45" pathLength="100"/></svg><span><strong>−63%</strong><small>下降</small></span></div>
                     <h4>二氧化碳排放</h4><p>CO₂ EMISSIONS</p>
                   </div>
                 </div>
@@ -244,39 +247,51 @@
           <p><span data-data-count>01</span> / 03 · 左右翻阅</p>
         </div>
       </section>
-      <section id="science-start" class="cell-factory" aria-labelledby="cell-factory-title" data-nav-section="science-start">
+      <section id="science-start" class="cell-factory" aria-labelledby="cell-factory-title" data-nav-section="introduction-start">
         <div class="cell-factory__heading">
           <p>THE CELL FACTORY / 生命制造现场</p>
-          <h2 id="cell-factory-title">细胞工厂</h2>
+          <h2 id="cell-factory-title" class="cell-factory__particle-title">
+            <span class="sr-only">细胞工厂</span>
+            <canvas id="cell-factory-title-particles" aria-hidden="true"></canvas>
+          </h2>
           <span>选择一件正在被生命重新制造的事物</span>
         </div>
+        <nav class="cell-factory__steps" aria-label="细胞工厂步骤">
+          <button type="button" data-factory-step="0" aria-label="第 1 步：细胞工厂">01</button>
+          <button type="button" data-factory-step="1" aria-label="第 2 步：厂房">02</button>
+          <button type="button" data-factory-step="2" aria-label="第 3 步：图纸">03</button>
+          <button type="button" data-factory-step="3" aria-label="第 4 步：工人">04</button>
+          <button type="button" data-factory-step="4" aria-label="第 5 步：流水线">05</button>
+          <button type="button" data-factory-step="5" aria-label="第 6 步：控制台">06</button>
+          <button type="button" data-factory-step="6" aria-label="第 7 步：工具革命">07</button>
+        </nav>
         <div class="cell-factory__collage">
           <button class="factory-piece factory-piece--1" type="button" data-open-factory="overview" aria-label="查看细胞工厂总览">
-            <img src="./assets/cell-factory-1.png" alt="生物制造生产场景插画" />
+            <img src="./assets/factory-stage-1.jpg" alt="细胞工厂园区" />
             <span>细胞工厂<small>总览</small></span>
           </button>
           <button class="factory-piece factory-piece--2" type="button" data-open-factory="chassis" aria-label="查看细胞厂房">
-            <img src="./assets/cell-factory-2.png" alt="奔跑与健康插画" />
+            <img src="./assets/factory-stage-2.jpg" alt="自动化生产车间" />
             <span>厂房<small>细胞与底盘</small></span>
           </button>
           <button class="factory-piece factory-piece--3" type="button" data-open-factory="blueprint" aria-label="查看基因图纸">
-            <img src="./assets/cell-factory-3.png" alt="疫苗接种插画" />
+            <img src="./assets/factory-stage-3.jpg" alt="数字化基因图纸" />
             <span>图纸<small>基因与 DNA</small></span>
           </button>
           <button class="factory-piece factory-piece--4" type="button" data-open-factory="workers" aria-label="查看酶工人">
-            <img src="./assets/cell-factory-4.png" alt="食物与营养插画" />
+            <img src="./assets/factory-stage-4.jpg" alt="实验室技术人员" />
             <span>工人<small>酶与催化</small></span>
           </button>
           <button class="factory-piece factory-piece--5" type="button" data-open-factory="pipeline" aria-label="查看代谢流水线">
-            <img src="./assets/cell-factory-5.png" alt="精准用药插画" />
+            <img src="./assets/factory-stage-5.jpg" alt="自动化生产流水线" />
             <span>流水线<small>代谢通路</small></span>
           </button>
           <button class="factory-piece factory-piece--6" type="button" data-open-factory="console" aria-label="查看细胞控制台">
-            <img src="./assets/cell-factory-6.png" alt="细胞治疗插画" />
+            <img src="./assets/factory-stage-6.jpg" alt="精密制造控制设备" />
             <span>控制台<small>调控与产量</small></span>
           </button>
           <button class="factory-piece factory-piece--7" type="button" data-open-factory="tools" aria-label="查看细胞工厂的工具革命">
-            <img src="./assets/cell-factory-7.png" alt="疾病检测插画" />
+            <img src="./assets/factory-stage-7.jpg" alt="工具革命与制造齿轮" />
             <span>工具革命<small>从使用到改造</small></span>
           </button>
         </div>
@@ -325,7 +340,78 @@
         <div class="geo-city-summary"><span>四个城市，各占一段</span><strong>上海出源头，北京出政策，深圳出企业，天津出产能。</strong></div>
         <p class="geo-panel__hint">点击坐标，查看各国战略</p>
       </section>
+      <section id="application-start" class="application-gallery" aria-labelledby="application-title" data-nav-section="application-start">
+        <header class="application-gallery__header">
+          <p>APPLICATIONS / 生命制造已经发生</p>
+          <h2 id="application-title">四种应用，<br />四条制造路线</h2>
+        </header>
+        <nav class="application-gallery__tabs" role="tablist" aria-label="应用板块">
+          <button class="is-active" type="button" role="tab" aria-selected="true" data-application-tab="medicine">为药</button>
+          <button type="button" role="tab" aria-selected="false" data-application-tab="food">为食</button>
+          <button type="button" role="tab" aria-selected="false" data-application-tab="clothing">为衣</button>
+          <button type="button" role="tab" aria-selected="false" data-application-tab="clean">为净</button>
+        </nav>
+        <div class="application-gallery__viewport">
+          <article class="application-page" data-application-page="medicine" aria-hidden="false">
+            <div class="application-page__title"><span class="application-icon application-icon--pill" aria-hidden="true"></span><div><p>01 / MEDICINE</p><h3>为药 · 这些药，是在罐子里造的</h3></div></div>
+            <div class="application-cards">
+              <button class="application-card application-card--wide" type="button" data-open-material="insulin"><img src="./assets/medicine-card-1.jpg" alt="胰岛素生物制造"/><span class="application-card__shade"></span><span class="application-card__label"><small>01</small><strong>胰岛素</strong></span><span class="application-card__reveal"><strong>胰岛素</strong><p>糖尿病患者天天用的那一针，四十年前还得从猪胰脏里提取</p></span></button>
+              <button class="application-card application-card--narrow" type="button" data-open-material="artemisinin"><img src="./assets/medicine-card-2.jpg" alt="青蒿素生物制造"/><span class="application-card__shade"></span><span class="application-card__label"><small>02</small><strong>青蒿素</strong></span><span class="application-card__reveal"><strong>青蒿素</strong><p>几十吨草换几公斤药，现在换成酵母来“种”</p></span></button>
+              <button class="application-card" type="button" data-open-material="mrna"><img src="./assets/medicine-card-3.jpg" alt="mRNA 疫苗生产"/><span class="application-card__shade"></span><span class="application-card__label"><small>03</small><strong>mRNA 疫苗</strong></span><span class="application-card__reveal"><strong>mRNA 疫苗</strong><p>疫苗里没有病毒，只有一段写好的指令</p></span></button>
+              <button class="application-card application-card--wide" type="button" data-open-material="cart"><img src="./assets/medicine-card-4.jpg" alt="CAR-T 细胞治疗"/><span class="application-card__shade"></span><span class="application-card__label"><small>04 / 特例</small><strong>CAR-T 细胞</strong></span><span class="application-card__reveal"><strong>CAR-T 细胞</strong><p>它不走发酵罐——药品本身是活的细胞</p></span></button>
+            </div>
+          </article>
+          <article class="application-page" data-application-page="food" aria-hidden="false">
+            <div class="application-page__title"><span class="application-icon application-icon--seed" aria-hidden="true"></span><div><p>02 / FOOD</p><h3>为食 · 这顿饭，也可以在罐子里生长</h3></div></div>
+            <div class="application-cards">
+              <button class="application-card application-card--wide" type="button" data-open-material="amino-acids"><img src="./assets/food-card-1.jpg" alt="氨基酸分子与发酵意象"/><span class="application-card__shade"></span><span class="application-card__label"><small>01</small><strong>饲用氨基酸</strong></span><span class="application-card__reveal"><strong>饲用氨基酸</strong><p>赖氨酸、苏氨酸等添加剂，早已由微生物发酵规模生产</p></span></button>
+              <button class="application-card" type="button" data-open-material="nitrogen-fixer"><img src="./assets/food-card-2.jpg" alt="植物根系上的固氮根瘤"/><span class="application-card__shade"></span><span class="application-card__label"><small>02</small><strong>固氮菌剂</strong></span><span class="application-card__reveal"><strong>固氮菌剂</strong><p>让微生物在作物根部就地制造可用的氮</p></span></button>
+              <button class="application-card application-card--narrow" type="button" data-open-material="food-ingredients"><img src="./assets/food-card-3.jpg" alt="丰富的蔬菜与食品原料"/><span class="application-card__shade"></span><span class="application-card__label"><small>03</small><strong>食品原料</strong></span><span class="application-card__reveal"><strong>食品原料</strong><p>维生素、代糖和透明质酸，很多都来自细胞工厂</p></span></button>
+              <button class="application-card application-card--wide" type="button" data-open-material="cultured-meat"><img src="./assets/food-card-4.jpg" alt="实验室培养肉样本"/><span class="application-card__shade"></span><span class="application-card__label"><small>04</small><strong>培养肉</strong></span><span class="application-card__reveal"><strong>培养肉</strong><p>动物细胞在体外长成肌肉组织，蛋白质不必再以整只动物为中介</p></span></button>
+            </div>
+          </article>
+          <article class="application-page" data-application-page="clothing" aria-hidden="false">
+            <div class="application-page__title"><span class="application-icon application-icon--fiber" aria-hidden="true"></span><div><p>03 / MATERIALS</p><h3>为衣 · 材料不一定来自石油</h3></div></div>
+            <div class="application-cards">
+              <button class="application-card" type="button" data-open-material="pdo"><img src="./assets/clothing-card-1.jpg" alt="1,3-丙二醇透明样品"/><span class="application-card__shade"></span><span class="application-card__label"><small>01</small><strong>1,3-丙二醇</strong></span><span class="application-card__reveal"><strong>1,3-丙二醇</strong><p>高端化纤 PTT 的关键原料，生物法已经实现投产</p></span></button>
+              <button class="application-card application-card--wide" type="button" data-open-material="bio-nylon"><img src="./assets/clothing-card-2.jpg" alt="白色生物基尼龙颗粒"/><span class="application-card__shade"></span><span class="application-card__label"><small>02</small><strong>生物基尼龙</strong></span><span class="application-card__reveal"><strong>生物基尼龙</strong><p>微生物造出与石油路线相同的分子，下游设备无需重建</p></span></button>
+              <button class="application-card application-card--narrow" type="button" data-open-material="bioplastic"><img src="./assets/clothing-card-3.jpg" alt="自然环境中的可降解塑料"/><span class="application-card__shade"></span><span class="application-card__label"><small>03</small><strong>可降解塑料</strong></span><span class="application-card__reveal"><strong>可降解塑料</strong><p>由微生物或生物基原料生产，在特定条件下完成降解</p></span></button>
+              <button class="application-card" type="button" data-open-material="bio-rubber"><img src="./assets/clothing-card-4.jpg" alt="夕阳道路上的仿生橡胶轮胎"/><span class="application-card__shade"></span><span class="application-card__label"><small>04</small><strong>仿生橡胶</strong></span><span class="application-card__reveal"><strong>仿生橡胶</strong><p>面向轮胎市场，为天然橡胶建立新的替代路线</p></span></button>
+            </div>
+          </article>
+          <article class="application-page" data-application-page="clean" aria-hidden="false">
+            <div class="application-page__title"><span class="application-icon application-icon--drop" aria-hidden="true"></span><div><p>04 / ECOLOGY</p><h3>为净 · 把细胞派到污染现场</h3></div></div>
+            <div class="application-cards">
+              <button class="application-card application-card--wide" type="button" data-open-material="pet-enzyme"><img src="./assets/clean-card-1.jpg" alt="透明再生塑料颗粒"/><span class="application-card__shade"></span><span class="application-card__label"><small>01</small><strong>PET 降解酶</strong></span><span class="application-card__reveal"><strong>PET 降解酶</strong><p>把漫长的塑料降解过程压缩到以周计</p></span></button>
+              <button class="application-card application-card--narrow" type="button" data-open-material="saf"><img src="./assets/clean-card-2.jpg" alt="生物燃料工业装置"/><span class="application-card__shade"></span><span class="application-card__label"><small>02</small><strong>生物航煤</strong></span><span class="application-card__reveal"><strong>生物航煤</strong><p>把废弃油脂变成航空燃料，已经进入真实航班</p></span></button>
+              <button class="application-card" type="button" data-open-material="carbon-use"><img src="./assets/clean-card-3.jpg" alt="森林中的绿色循环标志"/><span class="application-card__shade"></span><span class="application-card__label"><small>03</small><strong>碳利用</strong></span><span class="application-card__reveal"><strong>二氧化碳制化学品</strong><p>让废气成为甲醇和小分子化学品的原料</p></span></button>
+              <button class="application-card application-card--wide" type="button" data-open-material="bioremediation"><img src="./assets/clean-card-4.jpg" alt="蓝红色细胞微观结构"/><span class="application-card__shade"></span><span class="application-card__label"><small>04</small><strong>工程菌修复</strong></span><span class="application-card__reveal"><strong>工程菌修复</strong><p>定制菌群直接进入污染现场，完成原位治理</p></span></button>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+    <div class="material-view" aria-hidden="true">
+      <div class="material-view__backdrop" aria-hidden="true"></div>
+      <button class="material-view__close" type="button" aria-label="返回"><span aria-hidden="true">←</span><span>返回</span></button>
+      <article class="material-story" aria-live="polite">
+        <div class="material-story__visual"><img src="" alt="" /><span class="material-story__index"></span></div>
+        <div class="material-story__content">
+          <p class="material-story__eyebrow"></p>
+          <h2></h2>
+          <p class="material-story__lead"></p>
+          <section class="material-story__section">
+            <div class="material-story__section-title"><span>01</span><div><small>FORMATION PROCESS</small><h3>它是怎样形成的</h3></div></div>
+            <ol class="material-story__process"></ol>
+          </section>
+          <section class="material-story__section">
+            <div class="material-story__section-title"><span>02</span><div><small>IN REAL LIFE</small><h3>它来到现实生活之后</h3></div></div>
+            <div class="material-story__uses"></div>
+          </section>
+        </div>
+      </article>
+      <nav class="material-view__pager" aria-label="切换材料"><button type="button" data-material-direction="-1" aria-label="上一个材料">←</button><span></span><button type="button" data-material-direction="1" aria-label="下一个材料">→</button></nav>
+    </div>
     <div class="detail-view" aria-hidden="true">
       <button class="detail-view__close" type="button" aria-label="返回"><span aria-hidden="true">←</span><span>返回</span></button>
       <div class="detail-view__progress" aria-hidden="true"><span></span></div>
@@ -673,37 +759,37 @@
 
       <article class="factory-page" data-factory-page="overview">
         <div class="factory-page__copy"><p class="factory-page__eyebrow">01 / THE CELL FACTORY</p><h2>把细胞，<br />当成一座工厂</h2><p class="factory-page__lead">不用电，不用高温高压，也不用刺鼻的有机溶剂。只要喂进去一点糖，它就在常温常压下，把原料变成我们需要的东西。</p><p>这样的工厂不是科幻。它已经在地球上运转了 35 亿年：酵母把糖变成酒精，青霉菌把糖变成青霉素，人体细胞把食物变成肌肉与血液。过去几千年，我们只会使用它；合成生物学开始学习如何改造和经营它。</p><blockquote>合成生物学做的事只有一件：<strong>把细胞当成一座工厂来经营。</strong></blockquote></div>
-        <img src="./assets/cell-factory-1.png" alt="细胞工厂总览插画" />
+        <img src="./assets/factory-detail-1.jpg" alt="细胞工厂总览插画" />
       </article>
 
       <article class="factory-page" data-factory-page="chassis">
         <div class="factory-page__copy"><p class="factory-page__eyebrow">02 / CHASSIS</p><h2>厂房，<br />是细胞本身</h2><p class="factory-page__lead">业内把承担生产任务的细胞叫作“底盘”。不同底盘，就像不同城市里的厂房，各有适合的生产条件。</p><div class="factory-page__grid"><section><span>常用底盘</span><h3>大肠杆菌</h3><p>生长快、遗传工具成熟，适合生产许多蛋白质和小分子，是实验室和工业里最常见的底盘之一。</p></section><section><span>复杂制造</span><h3>酵母</h3><p>拥有更复杂的细胞结构，更擅长折叠蛋白和组装植物来源的长代谢路线。</p></section><section><span>选择标准</span><h3>不是越快越好</h3><p>还要看耐受性、培养成本、产物毒性与后续纯化。选错厂房，再好的图纸也难以量产。</p></section></div></div>
-        <img src="./assets/cell-factory-2.png" alt="细胞底盘插画" />
+        <img src="./assets/factory-detail-2.jpg" alt="细胞底盘插画" />
       </article>
 
       <article class="factory-page" data-factory-page="blueprint">
         <div class="factory-page__copy"><p class="factory-page__eyebrow">03 / BLUEPRINT</p><h2>图纸，<br />是基因</h2><p class="factory-page__lead">DNA 不只是遗传信息，也是生产说明书。它规定要制造哪些蛋白、何时启动、做到什么程度。</p><div class="factory-page__grid"><section><span>编码区</span><h3>写下要造什么</h3><p>基因序列决定蛋白质的氨基酸顺序，也决定酶最终能完成哪一种化学反应。</p></section><section><span>调控区</span><h3>写下何时开工</h3><p>启动子和终止子控制生产的开始与结束，调控元件决定信号出现时哪些基因被读取。</p></section><section><span>设计</span><h3>重新排列说明书</h3><p>研究者可以组合来自不同物种的基因，把原本不存在于同一细胞中的能力装进一个底盘。</p></section></div></div>
-        <img src="./assets/cell-factory-3.png" alt="基因图纸插画" />
+        <img src="./assets/factory-detail-3.jpg" alt="基因图纸插画" />
       </article>
 
       <article class="factory-page" data-factory-page="workers">
         <div class="factory-page__copy"><p class="factory-page__eyebrow">04 / ENZYMES</p><h2>工人，<br />是酶</h2><p class="factory-page__lead">图纸不会自己变成产品。真正完成切割、拼接和转化的是酶，它们是细胞工厂里唯一真正动手的工人。</p><div class="factory-page__grid"><section><span>催化</span><h3>降低反应门槛</h3><p>酶让原本需要高温高压的反应，在温和环境下快速发生，并对目标分子保持高度选择性。</p></section><section><span>分工</span><h3>一个工人做一步</h3><p>多数酶只擅长一种反应。复杂产品往往需要多个酶接力，任何一步迟缓都会堵塞整条生产线。</p></section><section><span>定制</span><h3>改造更好的工人</h3><p>定向进化和计算设计可以提高酶的速度、稳定性与耐受性，让它适应工业环境。</p></section></div></div>
-        <img src="./assets/cell-factory-4.png" alt="酶与催化插画" />
+        <img src="./assets/factory-detail-4.jpg" alt="酶与催化插画" />
       </article>
 
       <article class="factory-page" data-factory-page="pipeline">
         <div class="factory-page__copy"><p class="factory-page__eyebrow">05 / METABOLIC PATHWAY</p><h2>流水线，<br />是代谢通路</h2><p class="factory-page__lead">一个反应接着一个反应，原料从这头进去，产品从那头出来。代谢通路就是细胞内部相互连接的生产线。</p><div class="factory-page__grid"><section><span>输入</span><h3>糖只是起点</h3><p>葡萄糖、甲醇、植物残渣甚至工业尾气，都可能成为细胞获取碳与能量的原料。</p></section><section><span>瓶颈</span><h3>最慢一步决定产量</h3><p>中间产物积累会浪费原料甚至毒害细胞，需要平衡每个酶的表达量，让物料持续向前流动。</p></section><section><span>输出</span><h3>从毫克走向万吨</h3><p>实验室里“能检测到”只是开始。真正的生产线必须持续、稳定地给出高浓度产品。</p></section></div></div>
-        <img src="./assets/cell-factory-5.png" alt="代谢流水线插画" />
+        <img src="./assets/factory-detail-5.jpg" alt="代谢流水线插画" />
       </article>
 
       <article class="factory-page" data-factory-page="console">
         <div class="factory-page__copy"><p class="factory-page__eyebrow">06 / CONTROL SYSTEM</p><h2>控制台，<br />决定开多大</h2><p class="factory-page__lead">让一条生产线存在并不难，难的是决定什么时候开、开多大，以及如何避免把厂房本身累垮。</p><div class="factory-page__grid"><section><span>开关</span><h3>感知环境信号</h3><p>基因开关能够响应温度、营养或特定分子，在合适的时刻开启目标通路。</p></section><section><span>分配</span><h3>生长还是生产</h3><p>细胞既要维持生命又要替人造产品。控制系统需要在两者之间重新分配有限的能量与原料。</p></section><section><span>反馈</span><h3>让系统自己纠偏</h3><p>传感器读取中间产物，再自动调整基因表达，使生产线在波动中保持稳定。</p></section></div></div>
-        <img src="./assets/cell-factory-6.png" alt="细胞控制系统插画" />
+        <img src="./assets/factory-detail-6.jpg" alt="细胞控制系统插画" />
       </article>
 
       <article class="factory-page" data-factory-page="tools">
         <div class="factory-page__copy"><p class="factory-page__eyebrow">07 / FROM USE TO DESIGN</p><h2>隔开的不是原理，<br />是工具</h2><p class="factory-page__lead">发酵并不新鲜。真正的新变化，是人类终于拥有了读取、改写、装配和测试生命系统的成套工具。</p><div class="factory-page__grid"><section><span>读取</span><h3>测序看清图纸</h3><p>更快、更便宜的 DNA 测序让研究者能够比较物种、寻找基因，并追踪改造后的变化。</p></section><section><span>改写</span><h3>基因编辑修改图纸</h3><p>CRISPR 等工具让删除、插入与调控变得精准，试错周期从数月缩短到数周甚至数天。</p></section><section><span>迭代</span><h3>设计—构建—测试—学习</h3><p>自动化实验和数据模型把每轮结果送回下一轮设计，细胞工厂由手工调试走向工程化迭代。</p></section></div><blockquote>生物学和工业制造之间隔的从来不是原理，<strong>是工具。</strong></blockquote></div>
-        <img src="./assets/cell-factory-7.png" alt="细胞工厂工具革命插画" />
+        <img src="./assets/factory-detail-7.jpg" alt="细胞工厂工具革命插画" />
       </article>
     </div>
 
@@ -715,11 +801,11 @@
         <button type="button" data-milestone-nav="2000">2000</button><button type="button" data-milestone-nav="2003">2003</button><button type="button" data-milestone-nav="2010">2010</button><button type="button" data-milestone-nav="2012">2012</button><button type="button" data-milestone-nav="2024">2024</button>
       </nav>
       <article class="milestone-page" data-milestone="2000">
-        <p class="milestone-page__eyebrow">01 / GENETIC CIRCUITS</p><h2>2000</h2><img class="milestone-page__visual" src="./assets/cell-particles.jpg" alt="细胞与基因控制的微观意象" /><div class="milestone-page__headline"><span>控制台到位</span><h3>生命第一次拥有<br />可设计的开关</h3></div>
+        <p class="milestone-page__eyebrow">01 / GENETIC CIRCUITS</p><h2>2000</h2><img class="milestone-page__visual" src="./assets/milestone-2000-dna.png" alt="DNA 链与可设计基因开关意象" /><div class="milestone-page__headline"><span>控制台到位</span><h3>生命第一次拥有<br />可设计的开关</h3></div>
         <div class="milestone-page__facts"><section><small>代表成果</small><h4>基因开关与振荡器</h4><p>科学家分别构建出可在两种状态间切换的“遗传拨动开关”和周期性运行的“抑制振荡器”。它们是最早被人工设计并在细胞内工作的基因电路。</p></section><section><small>技术突破</small><h4>从观察到控制</h4><p>基因不再只是被读取的自然信息。启动子、抑制蛋白和反馈回路开始像电子元件一样，被组织成能够执行逻辑的控制系统。</p></section><section><small>为什么重要</small><h4>合成生物学的起点</h4><p>这一年证明了细胞行为可以被编程。此后的生物传感器、智能药物和细胞治疗，都建立在“基因电路可以设计”的前提上。</p></section></div>
       </article>
       <article class="milestone-page" data-milestone="2003">
-        <p class="milestone-page__eyebrow">02 / STANDARD BIOLOGICAL PARTS</p><h2>2003</h2><img class="milestone-page__visual" src="./assets/synthetic-biology-cells.jpg" alt="生物零件与细胞结构意象" /><div class="milestone-page__headline"><span>标准件到位</span><h3>基因零件开始<br />像积木一样组合</h3></div>
+        <p class="milestone-page__eyebrow">02 / STANDARD BIOLOGICAL PARTS</p><h2>2003</h2><img class="milestone-page__visual" src="./assets/milestone-2003-dna.png" alt="DNA 标准生物零件与模块化组合意象" /><div class="milestone-page__headline"><span>标准件到位</span><h3>基因零件开始<br />像积木一样组合</h3></div>
         <div class="milestone-page__facts"><section><small>代表成果</small><h4>BioBrick 与 iGEM 起步</h4><p>MIT 的教学项目开始让学生使用标准化生物零件构建系统，并逐步发展为 iGEM。标准零件库让设计可以被记录、共享和复用。</p></section><section><small>技术突破</small><h4>统一接口</h4><p>启动子、核糖体结合位点和编码序列有了模块化描述与装配规则。不同团队第一次能够在共同规范下交换设计。</p></section><section><small>为什么重要</small><h4>工程协作成为可能</h4><p>标准化让合成生物学从单个实验室的手艺，转向多人协作的工程体系。今天的自动化设计与生物铸造厂都继承了这一思想。</p></section></div>
       </article>
       <article class="milestone-page" data-milestone="2010">
@@ -727,7 +813,7 @@
         <div class="milestone-page__facts"><section><small>代表成果</small><h4>JCVI-syn1.0</h4><p>文特尔研究所合成约 108 万碱基对的细菌基因组，并将其移入受体细胞。新细胞能够生长、分裂，并由合成基因组控制。</p></section><section><small>技术突破</small><h4>从零件到全基因组</h4><p>研究者完成了大规模 DNA 设计、合成、拼接、纠错和移植，证明整套遗传操作系统能够由数字序列重新构建。</p></section><section><small>边界说明</small><h4>不是“从无到有造生命”</h4><p>细胞膜、核糖体和代谢机器来自原有受体细胞。真正从头合成的是控制这些机器的基因组，而非整颗细胞的所有结构。</p></section></div>
       </article>
       <article class="milestone-page" data-milestone="2012">
-        <p class="milestone-page__eyebrow">04 / PRECISE GENE EDITING</p><h2>2012</h2><img class="milestone-page__visual" src="./assets/synthetic-biology-cells.jpg" alt="精准基因编辑的细胞意象" /><div class="milestone-page__headline"><span>改图纸的笔变准了</span><h3>CRISPR-Cas9 成为<br />可编程编辑工具</h3></div>
+        <p class="milestone-page__eyebrow">04 / PRECISE GENE EDITING</p><h2>2012</h2><img class="milestone-page__visual" src="./assets/milestone-2012-crispr.jpg" alt="CRISPR 精准基因编辑分子结构意象" /><div class="milestone-page__headline"><span>改图纸的笔变准了</span><h3>CRISPR-Cas9 成为<br />可编程编辑工具</h3></div>
         <div class="milestone-page__facts"><section><small>代表成果</small><h4>RNA 引导的 Cas9</h4><p>研究证明 Cas9 可以由人工设计的向导 RNA 引导，在指定 DNA 位置完成切割。改变向导序列，就能改变编辑目标。</p></section><section><small>技术突破</small><h4>低成本、易编程、可扩展</h4><p>过去的基因编辑工具需要为每个目标重新设计蛋白质；CRISPR 主要通过更换一小段 RNA 完成重定向，大幅降低了门槛。</p></section><section><small>为什么重要</small><h4>设计进入快速迭代</h4><p>基因敲除、插入与调控变得更直接，合成生物学的“设计—构建—测试—学习”循环因此明显加速。</p></section></div>
       </article>
       <article class="milestone-page" data-milestone="2024">
@@ -735,5 +821,16 @@
         <div class="milestone-page__facts"><section><small>代表成果</small><h4>结构预测与计算设计获认可</h4><p>2024 年诺贝尔化学奖授予计算蛋白质设计与蛋白质结构预测领域的关键贡献者，标志着 AI 与计算设计进入生命科学主工具箱。</p></section><section><small>技术突破</small><h4>从寻找蛋白到生成蛋白</h4><p>模型能够在巨大序列空间中提出全新结构，再由实验筛选验证。研究目标从“自然界有没有”转向“任务需要什么”。</p></section><section><small>现实边界</small><h4>设计不等于交付</h4><p>AI 提出的蛋白仍需经过表达、稳定性、活性与安全性验证。“按需设计酶”已经成为方向，但并非所有设计都能直接工业化。</p></section></div>
       </article>
     </div>
+    <aside class="science-spirit" id="spiritDock" aria-label="智慧精灵科普助手">
+      <div class="spirit-bubble" id="spiritBubble" aria-live="polite"></div>
+      <div class="spirit-bubble spirit-bubble--secondary" id="spiritBubbleSecondary" aria-live="polite"></div>
+      <section class="science-spirit__panel" aria-hidden="true">
+        <header><div class="science-spirit__avatar" aria-hidden="true"><i></i><i></i></div><div><span>陪你读懂合成生物学</span></div><button type="button" data-spirit-close aria-label="关闭对话">×</button></header>
+        <div class="science-spirit__messages" aria-live="polite"><div class="science-spirit__message science-spirit__message--bot">你好，我会跟着你浏览。可以问我“细胞工厂是什么”，也可以直接问某一种材料怎么形成、用在哪里。</div></div>
+        <div class="science-spirit__suggestions" aria-label="推荐问题"></div>
+        <form class="science-spirit__form"><label class="sr-only" for="spirit-question">向智慧精灵提问</label><input id="spirit-question" type="text" autocomplete="off" placeholder="问一个关于合成生物学的问题…"/><button type="submit" aria-label="发送问题">↑</button></form>
+      </section>
+      <button class="science-spirit__trigger" id="spiritAvatar" data-pose="开心" type="button" aria-expanded="false" aria-label="打开智慧精灵"><span class="science-spirit__orb" aria-hidden="true"><img class="spirit-avatar__image" src="./assets/spirit-reference.png" alt="" /><span class="spirit-action" aria-hidden="true"></span></span></button>
+    </aside>
   </body>
 </html>
