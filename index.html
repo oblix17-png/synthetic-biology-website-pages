@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#dcecf8" />
     <title>合成生物</title>
-    <script type="module" crossorigin src="./assets/index-BeSRMZP0.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DQotGi6U.css">
+    <script type="module" crossorigin src="./assets/index-Bbp1IGKP.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DE8G46bx.css">
   </head>
   <body>
     <nav class="site-nav" aria-label="页面章节导航">
@@ -30,7 +30,7 @@
         <div class="intro-panel__content">
           <p class="intro-panel__eyebrow">合成生物学 · 第三次生物科技革命</p>
           <h1 id="intro-title" class="intro-particle-title">
-            <span class="sr-only">借生造物</span>
+            <span class="sr-only">合成生物</span>
             <canvas id="intro-title-particles" aria-hidden="true"></canvas>
           </h1>
           <div class="intro-panel__lower">
@@ -101,24 +101,6 @@
           </div>
         </div>
       </section>
-      <div id="introduction-start" class="pillar-carousel" aria-label="四个生物制造板块" data-nav-section="introduction-start">
-        <button class="pillar-arrow pillar-arrow--prev" type="button" aria-label="上一个板块">‹</button>
-        <div class="pillar-track">
-        <section class="pillar-panel" aria-labelledby="medicine-title">
-        <div class="pillar-copy"><p>01 / BIOLOGICAL MATERIALS</p><button class="pillar-entry" type="button" data-open-detail="medicine" aria-label="进入为药板块"><h2 id="medicine-title">为药</h2><small>点击进入 <span aria-hidden="true">↗</span></small></button><span>精准设计生命，重新定义治疗。</span></div><canvas data-pillar="medicine"></canvas>
-        </section>
-        <section class="pillar-panel" aria-labelledby="food-title">
-        <div class="pillar-copy"><p>02 / BIOLOGICAL MATERIALS</p><button class="pillar-entry" type="button" data-open-detail="food" aria-label="进入为食板块"><h2 id="food-title">为食</h2><small>点击进入 <span aria-hidden="true">↗</span></small></button><span>让生物制造更丰富的日常。</span></div><canvas data-pillar="food"></canvas>
-        </section>
-        <section class="pillar-panel" aria-labelledby="clothing-title">
-        <div class="pillar-copy"><p>03 / BIOLOGICAL MATERIALS</p><button class="pillar-entry" type="button" data-open-detail="clothing" aria-label="进入为衣板块"><h2 id="clothing-title">为衣</h2><small>点击进入 <span aria-hidden="true">↗</span></small></button><span>从细胞开始，编织新的材料。</span></div><canvas data-pillar="clothing"></canvas>
-        </section>
-        <section class="pillar-panel" aria-labelledby="clean-title">
-        <div class="pillar-copy"><p>04 / BIOLOGICAL MATERIALS</p><button class="pillar-entry" type="button" data-open-detail="clean" aria-label="进入为净板块"><h2 id="clean-title">为净</h2><small>点击进入 <span aria-hidden="true">↗</span></small></button><span>让清洁与循环成为生命系统的一部分。</span></div><canvas data-pillar="clean"></canvas>
-        </section>
-        </div>
-        <button class="pillar-arrow pillar-arrow--next" type="button" aria-label="下一个板块">›</button>
-      </div>
       <section class="gene-panel" aria-labelledby="gene-title" data-reveal-panel data-nav-section="introduction-start">
         <video class="gene-panel__video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
           <source src="./assets/gene-timeline.mp4" type="video/mp4" />
@@ -306,7 +288,7 @@
         </header>
         <div class="geo-panel__coordinates" aria-hidden="true">CHN · 35.8617° N / 104.1954° E</div>
         <div class="geo-panel__mode" role="group" aria-label="地图显示模式">
-          <button type="button" data-geo-mode="globe">地球</button>
+          <button type="button" data-geo-mode="globe">世界</button>
           <button class="is-active" type="button" data-geo-mode="map">中国</button>
         </div>
         <div class="geo-nodes" aria-label="各国合成生物学战略">
@@ -352,6 +334,9 @@
           <button type="button" role="tab" aria-selected="false" data-application-tab="clean">为净</button>
         </nav>
         <div class="application-gallery__viewport">
+          <article class="application-page application-page--pillar" data-application-page="medicine-overview" aria-hidden="false" aria-labelledby="medicine-title">
+            <div class="pillar-copy"><p>01 / BIOLOGICAL MATERIALS · OVERVIEW</p><button class="pillar-entry" type="button" data-open-detail="medicine" aria-label="进入为药板块"><h2 id="medicine-title">为药</h2><small>进入完整板块 <span aria-hidden="true">↗</span></small></button><span>精准设计生命，重新定义治疗。</span></div><canvas data-pillar="medicine"></canvas>
+          </article>
           <article class="application-page" data-application-page="medicine" aria-hidden="false">
             <div class="application-page__title"><span class="application-icon application-icon--pill" aria-hidden="true"></span><div><p>01 / MEDICINE</p><h3>为药 · 这些药，是在罐子里造的</h3></div></div>
             <div class="application-cards">
@@ -360,6 +345,9 @@
               <button class="application-card" type="button" data-open-material="mrna"><img src="./assets/medicine-card-3.jpg" alt="mRNA 疫苗生产"/><span class="application-card__shade"></span><span class="application-card__label"><small>03</small><strong>mRNA 疫苗</strong></span><span class="application-card__reveal"><strong>mRNA 疫苗</strong><p>疫苗里没有病毒，只有一段写好的指令</p></span></button>
               <button class="application-card application-card--wide" type="button" data-open-material="cart"><img src="./assets/medicine-card-4.jpg" alt="CAR-T 细胞治疗"/><span class="application-card__shade"></span><span class="application-card__label"><small>04 / 特例</small><strong>CAR-T 细胞</strong></span><span class="application-card__reveal"><strong>CAR-T 细胞</strong><p>它不走发酵罐——药品本身是活的细胞</p></span></button>
             </div>
+          </article>
+          <article class="application-page application-page--pillar" data-application-page="food-overview" aria-hidden="false" aria-labelledby="food-title">
+            <div class="pillar-copy"><p>02 / BIOLOGICAL MATERIALS · OVERVIEW</p><button class="pillar-entry" type="button" data-open-detail="food" aria-label="进入为食板块"><h2 id="food-title">为食</h2><small>进入完整板块 <span aria-hidden="true">↗</span></small></button><span>让生物制造更丰富的日常。</span></div><canvas data-pillar="food"></canvas>
           </article>
           <article class="application-page" data-application-page="food" aria-hidden="false">
             <div class="application-page__title"><span class="application-icon application-icon--seed" aria-hidden="true"></span><div><p>02 / FOOD</p><h3>为食 · 这顿饭，也可以在罐子里生长</h3></div></div>
@@ -370,6 +358,9 @@
               <button class="application-card application-card--wide" type="button" data-open-material="cultured-meat"><img src="./assets/food-card-4.jpg" alt="实验室培养肉样本"/><span class="application-card__shade"></span><span class="application-card__label"><small>04</small><strong>培养肉</strong></span><span class="application-card__reveal"><strong>培养肉</strong><p>动物细胞在体外长成肌肉组织，蛋白质不必再以整只动物为中介</p></span></button>
             </div>
           </article>
+          <article class="application-page application-page--pillar" data-application-page="clothing-overview" aria-hidden="false" aria-labelledby="clothing-title">
+            <div class="pillar-copy"><p>03 / BIOLOGICAL MATERIALS · OVERVIEW</p><button class="pillar-entry" type="button" data-open-detail="clothing" aria-label="进入为衣板块"><h2 id="clothing-title">为衣</h2><small>进入完整板块 <span aria-hidden="true">↗</span></small></button><span>从细胞开始，编织新的材料。</span></div><canvas data-pillar="clothing"></canvas>
+          </article>
           <article class="application-page" data-application-page="clothing" aria-hidden="false">
             <div class="application-page__title"><span class="application-icon application-icon--fiber" aria-hidden="true"></span><div><p>03 / MATERIALS</p><h3>为衣 · 材料不一定来自石油</h3></div></div>
             <div class="application-cards">
@@ -378,6 +369,9 @@
               <button class="application-card application-card--narrow" type="button" data-open-material="bioplastic"><img src="./assets/clothing-card-3.jpg" alt="自然环境中的可降解塑料"/><span class="application-card__shade"></span><span class="application-card__label"><small>03</small><strong>可降解塑料</strong></span><span class="application-card__reveal"><strong>可降解塑料</strong><p>由微生物或生物基原料生产，在特定条件下完成降解</p></span></button>
               <button class="application-card" type="button" data-open-material="bio-rubber"><img src="./assets/clothing-card-4.jpg" alt="夕阳道路上的仿生橡胶轮胎"/><span class="application-card__shade"></span><span class="application-card__label"><small>04</small><strong>仿生橡胶</strong></span><span class="application-card__reveal"><strong>仿生橡胶</strong><p>面向轮胎市场，为天然橡胶建立新的替代路线</p></span></button>
             </div>
+          </article>
+          <article class="application-page application-page--pillar" data-application-page="clean-overview" aria-hidden="false" aria-labelledby="clean-title">
+            <div class="pillar-copy"><p>04 / BIOLOGICAL MATERIALS · OVERVIEW</p><button class="pillar-entry" type="button" data-open-detail="clean" aria-label="进入为净板块"><h2 id="clean-title">为净</h2><small>进入完整板块 <span aria-hidden="true">↗</span></button><span>让清洁与循环成为生命系统的一部分。</span></div><canvas data-pillar="clean"></canvas>
           </article>
           <article class="application-page" data-application-page="clean" aria-hidden="false">
             <div class="application-page__title"><span class="application-icon application-icon--drop" aria-hidden="true"></span><div><p>04 / ECOLOGY</p><h3>为净 · 把细胞派到污染现场</h3></div></div>
@@ -731,14 +725,14 @@
       <nav class="geo-detail__nav" aria-label="国家与地区">
         <button type="button" data-geo-nav="us">美国</button><button type="button" data-geo-nav="eu">欧盟</button><button type="button" data-geo-nav="uk">英国</button><button type="button" data-geo-nav="japan">日本</button><button type="button" data-geo-nav="korea">韩国</button><button type="button" data-geo-nav="china">中国</button>
       </nav>
-      <article class="geo-country" data-geo-country="us"><p>01 / UNITED STATES</p><h2>美国 <strong>25%</strong></h2><span>2022 起</span><h3>把生物制造写进国家安全</h3><div><p>美国启动国家生物技术与生物制造倡议，国防部规划 <strong>12 亿美元</strong>建设生物制造基础设施。</p><p>2025 年其国家安全委员会报告直接提出“加速本国创新、迟滞中国发展”，建议未来五年至少投入 <strong>150 亿美元</strong>。</p></div></article>
-      <article class="geo-country" data-geo-country="eu"><p>02 / EUROPEAN UNION</p><h2>欧盟</h2><span>2024 — 2025</span><h3>从产业通信走向生物经济战略</h3><div><p>欧盟发布《促进欧盟生物技术和生物制造》通信，并在 2025 年更新《欧盟生物经济战略》。</p><p>目标是 <strong>2040 年成为全球领导者</strong>，并提出到 2030 年以生物基材料替代 25% 的石油基化工产品。</p></div></article>
-      <article class="geo-country" data-geo-country="uk"><p>03 / UNITED KINGDOM</p><h2>英国</h2><span>2012 起 · 2023 升级</span><h3>最早建立工程生物学路线图</h3><div><p>英国 2012 年发布《合成生物学路线图》，2023 年升级为《工程生物学国家愿景》。</p><p>投入 <strong>1.02 亿英镑</strong>，在 6 所大学建设研究中心，并布局 4 个 DNA 合成铸造厂。</p></div></article>
-      <article class="geo-country" data-geo-country="japan"><p>04 / JAPAN</p><h2>日本</h2><span>2019 起 · 2024 升级</span><h3>用市场规模倒推产业能力</h3><div><p>《生物经济战略》把生物制造列为三大支柱之一，目标是到 <strong>2030 年形成 100 万亿日元</strong>市场规模。</p><p>日本已为相关领域拨出 <strong>1 万亿日元</strong>预算，持续推动研发成果进入产业链。</p></div></article>
-      <article class="geo-country" data-geo-country="korea"><p>05 / SOUTH KOREA</p><h2>韩国 <strong>2%</strong></h2><span>2025 · 全球首个</span><h3>用专门立法加速追赶</h3><div><p>韩国通过《合成生物学促进法》，成为 <strong>全球第一部专门为合成生物学立法的法律</strong>。</p><p>起因很直接：其全球研究份额只有 2%，立法的核心目标就是缩短转化周期、加速追赶。</p></div></article>
+      <article class="geo-country" data-geo-country="us"><p>01 / UNITED STATES</p><h2>美国 <strong>研究份额 · 25%</strong></h2><span>2022 起</span><h3>把生物制造写进国家安全</h3><div><p>美国启动国家生物技术与生物制造倡议，国防部规划 <strong>12 亿美元</strong>建设生物制造基础设施。</p><p>2025 年其国家安全委员会报告直接提出“加速本国创新、迟滞中国发展”，建议未来五年至少投入 <strong>150 亿美元</strong>。</p></div></article>
+      <article class="geo-country" data-geo-country="eu"><p>02 / EUROPEAN UNION</p><h2>欧盟 <strong>研究份额 · 未单列</strong></h2><span>2024 — 2025</span><h3>从产业通信走向生物经济战略</h3><div><p>欧盟发布《促进欧盟生物技术和生物制造》通信，并在 2025 年更新《欧盟生物经济战略》。</p><p>目标是 <strong>2040 年成为全球领导者</strong>，并提出到 2030 年以生物基材料替代 25% 的石油基化工产品。</p></div></article>
+      <article class="geo-country" data-geo-country="uk"><p>03 / UNITED KINGDOM</p><h2>英国 <strong>研究份额 · 未单列</strong></h2><span>2012 起 · 2023 升级</span><h3>最早建立工程生物学路线图</h3><div><p>英国 2012 年发布《合成生物学路线图》，2023 年升级为《工程生物学国家愿景》。</p><p>投入 <strong>1.02 亿英镑</strong>，在 6 所大学建设研究中心，并布局 4 个 DNA 合成铸造厂。</p></div></article>
+      <article class="geo-country" data-geo-country="japan"><p>04 / JAPAN</p><h2>日本 <strong>研究份额 · 未单列</strong></h2><span>2019 起 · 2024 升级</span><h3>用市场规模倒推产业能力</h3><div><p>《生物经济战略》把生物制造列为三大支柱之一，目标是到 <strong>2030 年形成 100 万亿日元</strong>市场规模。</p><p>日本已为相关领域拨出 <strong>1 万亿日元</strong>预算，持续推动研发成果进入产业链。</p></div></article>
+      <article class="geo-country" data-geo-country="korea"><p>05 / SOUTH KOREA</p><h2>韩国 <strong>研究份额 · 2%</strong></h2><span>2025 · 全球首个</span><h3>用专门立法加速追赶</h3><div><p>韩国通过《合成生物学促进法》，成为 <strong>全球第一部专门为合成生物学立法的法律</strong>。</p><p>起因很直接：其全球研究份额只有 2%，立法的核心目标就是缩短转化周期、加速追赶。</p></div></article>
       <article class="geo-country geo-country--china" data-geo-country="china">
         <p>06 / CHINA · INDUSTRIAL CHAIN</p>
-        <h2>中国 <strong>16%</strong></h2>
+        <h2>中国 <strong>研究份额 · 16%</strong></h2>
         <span>产业链真实坐标</span>
         <h3>中国的位置，不是一条平线</h3>
         <div class="geo-country__intro"><p>前两根轴给的是整体印象。真正的坐标在产业链上——把链条切成三段，强弱立刻分开。</p></div>
@@ -817,7 +811,7 @@
         <div class="milestone-page__facts"><section><small>代表成果</small><h4>RNA 引导的 Cas9</h4><p>研究证明 Cas9 可以由人工设计的向导 RNA 引导，在指定 DNA 位置完成切割。改变向导序列，就能改变编辑目标。</p></section><section><small>技术突破</small><h4>低成本、易编程、可扩展</h4><p>过去的基因编辑工具需要为每个目标重新设计蛋白质；CRISPR 主要通过更换一小段 RNA 完成重定向，大幅降低了门槛。</p></section><section><small>为什么重要</small><h4>设计进入快速迭代</h4><p>基因敲除、插入与调控变得更直接，合成生物学的“设计—构建—测试—学习”循环因此明显加速。</p></section></div>
       </article>
       <article class="milestone-page" data-milestone="2024">
-        <p class="milestone-page__eyebrow">05 / AI PROTEIN DESIGN</p><h2>2024</h2><img class="milestone-page__visual" src="./assets/cell-particles.jpg" alt="人工智能蛋白质设计的微观意象" /><div class="milestone-page__headline"><span>工人可以定制了</span><h3>AI 开始按需求<br />设计蛋白质</h3></div>
+        <p class="milestone-page__eyebrow">05 / AI PROTEIN DESIGN</p><h2>2024</h2><img class="milestone-page__visual" src="./assets/milestone-2024-protein.jpg" alt="人工智能蛋白质设计的蓝色细胞意象" /><div class="milestone-page__headline"><span>工人可以定制了</span><h3>AI 开始按需求<br />设计蛋白质</h3></div>
         <div class="milestone-page__facts"><section><small>代表成果</small><h4>结构预测与计算设计获认可</h4><p>2024 年诺贝尔化学奖授予计算蛋白质设计与蛋白质结构预测领域的关键贡献者，标志着 AI 与计算设计进入生命科学主工具箱。</p></section><section><small>技术突破</small><h4>从寻找蛋白到生成蛋白</h4><p>模型能够在巨大序列空间中提出全新结构，再由实验筛选验证。研究目标从“自然界有没有”转向“任务需要什么”。</p></section><section><small>现实边界</small><h4>设计不等于交付</h4><p>AI 提出的蛋白仍需经过表达、稳定性、活性与安全性验证。“按需设计酶”已经成为方向，但并非所有设计都能直接工业化。</p></section></div>
       </article>
     </div>
